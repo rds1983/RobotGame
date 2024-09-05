@@ -1,0 +1,77 @@
+{
+  "Col": [
+    {
+      "Effect": "BasicEffect",
+      "DiffuseColor": [
+        0.41960788,
+        0.36078432,
+        0.7176471
+      ],
+      "EmissiveColor": [
+        0,
+        0,
+        0
+      ],
+      "SpecularColor": [
+        0,
+        0,
+        0
+      ],
+      "SpecularPower": 2,
+      "Alpha": 1,
+      "VertexColorEnabled": true,
+      "PreferPerPixelLighting": false,
+      "TextureEnabled": false
+    }
+  ],
+  "Plane01": [
+    {
+      "Effect": "BasicEffect",
+      "DiffuseColor": [
+        1,
+        1,
+        1
+      ],
+      "EmissiveColor": [
+        0,
+        0,
+        0
+      ],
+      "SpecularColor": [
+        1,
+        1,
+        1
+      ],
+      "SpecularPower": 16,
+      "Alpha": 1,
+      "VertexColorEnabled": false,
+      "PreferPerPixelLighting": false,
+      "TextureEnabled": false
+    }
+  ],
+  "Sandbag32": [
+    {
+      "Effect": "BasicEffect",
+      "DiffuseColor": [
+        0.588,
+        0.588,
+        0.588
+      ],
+      "EmissiveColor": [
+        0,
+        0,
+        0
+      ],
+      "SpecularColor": [
+        0,
+        0,
+        0
+      ],
+      "SpecularPower": 2,
+      "Alpha": 1,
+      "VertexColorEnabled": true,
+      "PreferPerPixelLighting": false,
+      "TextureEnabled": false
+    }
+  ]
+}

@@ -1,0 +1,418 @@
+{
+  "Object08": [
+    {
+      "Effect": "BasicEffect",
+      "DiffuseColor": [
+        0.5882353,
+        0.5882353,
+        0.5882353
+      ],
+      "EmissiveColor": [
+        0,
+        0,
+        0
+      ],
+      "SpecularColor": [
+        0,
+        0,
+        0
+      ],
+      "SpecularPower": 1.9999999,
+      "Alpha": 1,
+      "VertexColorEnabled": true,
+      "PreferPerPixelLighting": false,
+      "TextureEnabled": true,
+      "Texture": "/Models/Mech/Enemies/PhantomBoss.dds"
+    }
+  ],
+  "Object10": [
+    {
+      "Effect": "BasicEffect",
+      "DiffuseColor": [
+        0.5882353,
+        0.5882353,
+        0.5882353
+      ],
+      "EmissiveColor": [
+        0,
+        0,
+        0
+      ],
+      "SpecularColor": [
+        0,
+        0,
+        0
+      ],
+      "SpecularPower": 1.9999999,
+      "Alpha": 1,
+      "VertexColorEnabled": true,
+      "PreferPerPixelLighting": false,
+      "TextureEnabled": true,
+      "Texture": "/Models/Mech/Enemies/PhantomBoss.dds"
+    }
+  ],
+  "Object13": [
+    {
+      "Effect": "BasicEffect",
+      "DiffuseColor": [
+        0.5882353,
+        0.5882353,
+        0.5882353
+      ],
+      "EmissiveColor": [
+        0,
+        0,
+        0
+      ],
+      "SpecularColor": [
+        0,
+        0,
+        0
+      ],
+      "SpecularPower": 1.9999999,
+      "Alpha": 1,
+      "VertexColorEnabled": true,
+      "PreferPerPixelLighting": false,
+      "TextureEnabled": true,
+      "Texture": "/Models/Mech/Enemies/PhantomBoss.dds"
+    }
+  ],
+  "Object09": [
+    {
+      "Effect": "BasicEffect",
+      "DiffuseColor": [
+        0.5882353,
+        0.5882353,
+        0.5882353
+      ],
+      "EmissiveColor": [
+        0,
+        0,
+        0
+      ],
+      "SpecularColor": [
+        0,
+        0,
+        0
+      ],
+      "SpecularPower": 1.9999999,
+      "Alpha": 1,
+      "VertexColorEnabled": true,
+      "PreferPerPixelLighting": false,
+      "TextureEnabled": true,
+      "Texture": "/Models/Mech/Enemies/PhantomBoss.dds"
+    }
+  ],
+  "Object11": [
+    {
+      "Effect": "BasicEffect",
+      "DiffuseColor": [
+        0.5882353,
+        0.5882353,
+        0.5882353
+      ],
+      "EmissiveColor": [
+        0,
+        0,
+        0
+      ],
+      "SpecularColor": [
+        0,
+        0,
+        0
+      ],
+      "SpecularPower": 1.9999999,
+      "Alpha": 1,
+      "VertexColorEnabled": true,
+      "PreferPerPixelLighting": false,
+      "TextureEnabled": true,
+      "Texture": "/Models/Mech/Enemies/PhantomBoss.dds"
+    }
+  ],
+  "Object14": [
+    {
+      "Effect": "BasicEffect",
+      "DiffuseColor": [
+        0.5882353,
+        0.5882353,
+        0.5882353
+      ],
+      "EmissiveColor": [
+        0,
+        0,
+        0
+      ],
+      "SpecularColor": [
+        0,
+        0,
+        0
+      ],
+      "SpecularPower": 1.9999999,
+      "Alpha": 1,
+      "VertexColorEnabled": true,
+      "PreferPerPixelLighting": false,
+      "TextureEnabled": true,
+      "Texture": "/Models/Mech/Enemies/PhantomBoss.dds"
+    }
+  ],
+  "Object01": [
+    {
+      "Effect": "BasicEffect",
+      "DiffuseColor": [
+        0.5882353,
+        0.5882353,
+        0.5882353
+      ],
+      "EmissiveColor": [
+        0,
+        0,
+        0
+      ],
+      "SpecularColor": [
+        0,
+        0,
+        0
+      ],
+      "SpecularPower": 1.9999999,
+      "Alpha": 1,
+      "VertexColorEnabled": true,
+      "PreferPerPixelLighting": false,
+      "TextureEnabled": true,
+      "Texture": "/Models/Mech/Enemies/PhantomBoss.dds"
+    }
+  ],
+  "Object03": [
+    {
+      "Effect": "BasicEffect",
+      "DiffuseColor": [
+        0.5882353,
+        0.5882353,
+        0.5882353
+      ],
+      "EmissiveColor": [
+        0,
+        0,
+        0
+      ],
+      "SpecularColor": [
+        0,
+        0,
+        0
+      ],
+      "SpecularPower": 1.9999999,
+      "Alpha": 1,
+      "VertexColorEnabled": true,
+      "PreferPerPixelLighting": false,
+      "TextureEnabled": true,
+      "Texture": "/Models/Mech/Enemies/PhantomBoss.dds"
+    }
+  ],
+  "Object05": [
+    {
+      "Effect": "BasicEffect",
+      "DiffuseColor": [
+        0.5882353,
+        0.5882353,
+        0.5882353
+      ],
+      "EmissiveColor": [
+        0,
+        0,
+        0
+      ],
+      "SpecularColor": [
+        0,
+        0,
+        0
+      ],
+      "SpecularPower": 1.9999999,
+      "Alpha": 1,
+      "VertexColorEnabled": true,
+      "PreferPerPixelLighting": false,
+      "TextureEnabled": true,
+      "Texture": "/Models/Mech/Enemies/PhantomBoss.dds"
+    }
+  ],
+  "Object02": [
+    {
+      "Effect": "BasicEffect",
+      "DiffuseColor": [
+        0.5882353,
+        0.5882353,
+        0.5882353
+      ],
+      "EmissiveColor": [
+        0,
+        0,
+        0
+      ],
+      "SpecularColor": [
+        0,
+        0,
+        0
+      ],
+      "SpecularPower": 1.9999999,
+      "Alpha": 1,
+      "VertexColorEnabled": true,
+      "PreferPerPixelLighting": false,
+      "TextureEnabled": true,
+      "Texture": "/Models/Mech/Enemies/PhantomBoss.dds"
+    }
+  ],
+  "Object04": [
+    {
+      "Effect": "BasicEffect",
+      "DiffuseColor": [
+        0.5882353,
+        0.5882353,
+        0.5882353
+      ],
+      "EmissiveColor": [
+        0,
+        0,
+        0
+      ],
+      "SpecularColor": [
+        0,
+        0,
+        0
+      ],
+      "SpecularPower": 1.9999999,
+      "Alpha": 1,
+      "VertexColorEnabled": true,
+      "PreferPerPixelLighting": false,
+      "TextureEnabled": true,
+      "Texture": "/Models/Mech/Enemies/PhantomBoss.dds"
+    }
+  ],
+  "Object06": [
+    {
+      "Effect": "BasicEffect",
+      "DiffuseColor": [
+        0.5882353,
+        0.5882353,
+        0.5882353
+      ],
+      "EmissiveColor": [
+        0,
+        0,
+        0
+      ],
+      "SpecularColor": [
+        0,
+        0,
+        0
+      ],
+      "SpecularPower": 1.9999999,
+      "Alpha": 1,
+      "VertexColorEnabled": true,
+      "PreferPerPixelLighting": false,
+      "TextureEnabled": true,
+      "Texture": "/Models/Mech/Enemies/PhantomBoss.dds"
+    }
+  ],
+  "Object12": [
+    {
+      "Effect": "BasicEffect",
+      "DiffuseColor": [
+        0.5882353,
+        0.5882353,
+        0.5882353
+      ],
+      "EmissiveColor": [
+        0,
+        0,
+        0
+      ],
+      "SpecularColor": [
+        0,
+        0,
+        0
+      ],
+      "SpecularPower": 1.9999999,
+      "Alpha": 1,
+      "VertexColorEnabled": true,
+      "PreferPerPixelLighting": false,
+      "TextureEnabled": true,
+      "Texture": "/Models/Mech/Enemies/PhantomBoss.dds"
+    }
+  ],
+  "Object16": [
+    {
+      "Effect": "BasicEffect",
+      "DiffuseColor": [
+        0.5882353,
+        0.5882353,
+        0.5882353
+      ],
+      "EmissiveColor": [
+        0,
+        0,
+        0
+      ],
+      "SpecularColor": [
+        0,
+        0,
+        0
+      ],
+      "SpecularPower": 1.9999999,
+      "Alpha": 1,
+      "VertexColorEnabled": true,
+      "PreferPerPixelLighting": false,
+      "TextureEnabled": true,
+      "Texture": "/Models/Mech/Enemies/PhantomBoss_Add_512.dds"
+    }
+  ],
+  "Object07": [
+    {
+      "Effect": "BasicEffect",
+      "DiffuseColor": [
+        0.5882353,
+        0.5882353,
+        0.5882353
+      ],
+      "EmissiveColor": [
+        0,
+        0,
+        0
+      ],
+      "SpecularColor": [
+        0,
+        0,
+        0
+      ],
+      "SpecularPower": 1.9999999,
+      "Alpha": 1,
+      "VertexColorEnabled": true,
+      "PreferPerPixelLighting": false,
+      "TextureEnabled": true,
+      "Texture": "/Models/Mech/Enemies/PhantomBoss.dds"
+    }
+  ],
+  "Object15": [
+    {
+      "Effect": "BasicEffect",
+      "DiffuseColor": [
+        0.5882353,
+        0.5882353,
+        0.5882353
+      ],
+      "EmissiveColor": [
+        0,
+        0,
+        0
+      ],
+      "SpecularColor": [
+        0,
+        0,
+        0
+      ],
+      "SpecularPower": 1.9999999,
+      "Alpha": 1,
+      "VertexColorEnabled": true,
+      "PreferPerPixelLighting": false,
+      "TextureEnabled": true,
+      "Texture": "/Models/Mech/Enemies/PhantomBoss_Add_512.dds"
+    }
+  ]
+}

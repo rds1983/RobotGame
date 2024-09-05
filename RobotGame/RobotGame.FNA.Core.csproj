@@ -1,0 +1,21 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <AssemblyName>RobotGame</AssemblyName>
+    <RootNamespace>RobotGame</RootNamespace>
+    <PackageId>RobotGame.FNA.Core</PackageId>
+    <DefineConstants>$(DefineConstants);FNA</DefineConstants>
+    <TargetFramework>net8.0</TargetFramework>
+    <OutputPath>bin\FNA.Core\$(Configuration)</OutputPath>
+    <OutputType>Exe</OutputType>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Update="Assets\**\*.*">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>  
+
+  <ItemGroup>
+    <ProjectReference Include="..\RobotGameData\RobotGameData.FNA.Core.csproj" />
+  </ItemGroup>
+</Project>

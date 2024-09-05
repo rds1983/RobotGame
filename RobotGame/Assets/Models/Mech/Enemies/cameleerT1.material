@@ -1,0 +1,236 @@
+{
+  "Object01": [
+    {
+      "Effect": "BasicEffect",
+      "DiffuseColor": [
+        0.5882353,
+        0.5882353,
+        0.5882353
+      ],
+      "EmissiveColor": [
+        0,
+        0,
+        0
+      ],
+      "SpecularColor": [
+        0,
+        0,
+        0
+      ],
+      "SpecularPower": 1.9999999,
+      "Alpha": 1,
+      "VertexColorEnabled": true,
+      "PreferPerPixelLighting": false,
+      "TextureEnabled": true,
+      "Texture": "/Models/Mech/Enemies/NPC_cameleerT1_1024.dds"
+    }
+  ],
+  "Object03": [
+    {
+      "Effect": "BasicEffect",
+      "DiffuseColor": [
+        0.5882353,
+        0.5882353,
+        0.5882353
+      ],
+      "EmissiveColor": [
+        0,
+        0,
+        0
+      ],
+      "SpecularColor": [
+        0,
+        0,
+        0
+      ],
+      "SpecularPower": 1.9999999,
+      "Alpha": 1,
+      "VertexColorEnabled": true,
+      "PreferPerPixelLighting": false,
+      "TextureEnabled": true,
+      "Texture": "/Models/Mech/Enemies/NPC_cameleerT1_1024.dds"
+    }
+  ],
+  "Object05": [
+    {
+      "Effect": "BasicEffect",
+      "DiffuseColor": [
+        0.5882353,
+        0.5882353,
+        0.5882353
+      ],
+      "EmissiveColor": [
+        0,
+        0,
+        0
+      ],
+      "SpecularColor": [
+        0,
+        0,
+        0
+      ],
+      "SpecularPower": 1.9999999,
+      "Alpha": 1,
+      "VertexColorEnabled": true,
+      "PreferPerPixelLighting": false,
+      "TextureEnabled": true,
+      "Texture": "/Models/Mech/Enemies/NPC_cameleerT1_1024.dds"
+    }
+  ],
+  "Object02": [
+    {
+      "Effect": "BasicEffect",
+      "DiffuseColor": [
+        0.5882353,
+        0.5882353,
+        0.5882353
+      ],
+      "EmissiveColor": [
+        0,
+        0,
+        0
+      ],
+      "SpecularColor": [
+        0,
+        0,
+        0
+      ],
+      "SpecularPower": 1.9999999,
+      "Alpha": 1,
+      "VertexColorEnabled": true,
+      "PreferPerPixelLighting": false,
+      "TextureEnabled": true,
+      "Texture": "/Models/Mech/Enemies/NPC_cameleerT1_1024.dds"
+    }
+  ],
+  "Object04": [
+    {
+      "Effect": "BasicEffect",
+      "DiffuseColor": [
+        0.5882353,
+        0.5882353,
+        0.5882353
+      ],
+      "EmissiveColor": [
+        0,
+        0,
+        0
+      ],
+      "SpecularColor": [
+        0,
+        0,
+        0
+      ],
+      "SpecularPower": 1.9999999,
+      "Alpha": 1,
+      "VertexColorEnabled": true,
+      "PreferPerPixelLighting": false,
+      "TextureEnabled": true,
+      "Texture": "/Models/Mech/Enemies/NPC_cameleerT1_1024.dds"
+    }
+  ],
+  "Object06": [
+    {
+      "Effect": "BasicEffect",
+      "DiffuseColor": [
+        0.5882353,
+        0.5882353,
+        0.5882353
+      ],
+      "EmissiveColor": [
+        0,
+        0,
+        0
+      ],
+      "SpecularColor": [
+        0,
+        0,
+        0
+      ],
+      "SpecularPower": 1.9999999,
+      "Alpha": 1,
+      "VertexColorEnabled": true,
+      "PreferPerPixelLighting": false,
+      "TextureEnabled": true,
+      "Texture": "/Models/Mech/Enemies/NPC_cameleerT1_1024.dds"
+    }
+  ],
+  "Object07": [
+    {
+      "Effect": "BasicEffect",
+      "DiffuseColor": [
+        0.5882353,
+        0.5882353,
+        0.5882353
+      ],
+      "EmissiveColor": [
+        0,
+        0,
+        0
+      ],
+      "SpecularColor": [
+        0,
+        0,
+        0
+      ],
+      "SpecularPower": 1.9999999,
+      "Alpha": 1,
+      "VertexColorEnabled": true,
+      "PreferPerPixelLighting": false,
+      "TextureEnabled": true,
+      "Texture": "/Models/Mech/Enemies/NPC_cameleerT1_1024.dds"
+    }
+  ],
+  "Box03": [
+    {
+      "Effect": "BasicEffect",
+      "DiffuseColor": [
+        0.5882353,
+        0.5882353,
+        0.5882353
+      ],
+      "EmissiveColor": [
+        0,
+        0,
+        0
+      ],
+      "SpecularColor": [
+        0,
+        0,
+        0
+      ],
+      "SpecularPower": 1.9999999,
+      "Alpha": 1,
+      "VertexColorEnabled": true,
+      "PreferPerPixelLighting": false,
+      "TextureEnabled": true,
+      "Texture": "/Models/Mech/Enemies/NPC_cameleerT1_512_add.dds"
+    }
+  ],
+  "Object08": [
+    {
+      "Effect": "BasicEffect",
+      "DiffuseColor": [
+        0.5882353,
+        0.5882353,
+        0.5882353
+      ],
+      "EmissiveColor": [
+        0,
+        0,
+        0
+      ],
+      "SpecularColor": [
+        0,
+        0,
+        0
+      ],
+      "SpecularPower": 1.9999999,
+      "Alpha": 1,
+      "VertexColorEnabled": true,
+      "PreferPerPixelLighting": false,
+      "TextureEnabled": true,
+      "Texture": "/Models/Mech/Enemies/NPC_cameleerT1_1024.dds"
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "SMG_Lv4": [
+    {
+      "Effect": "ShaderModelEffect",
+      "Shininess": 0,
+      "SpecularPower": 0,
+      "NormalMap": "/Models/Weapons/SMG_Lv4_Nor.dds",
+      "SpecularMap": "/Models/Weapons/SMG_Lv4_Spec.dds",
+      "Texture": "/Models/Weapons/SMG_Lv4.dds"
+    }
+  ]
+}

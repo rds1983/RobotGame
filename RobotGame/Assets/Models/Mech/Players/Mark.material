@@ -1,0 +1,132 @@
+{
+  "Object14": [
+    {
+      "Effect": "ShaderModelEffect",
+      "Shininess": 0,
+      "SpecularPower": 0,
+      "NormalMap": "/Models/Mech/Players/Texture_Mark_Nomal.dds",
+      "SpecularMap": "/Models/Mech/Players/Texture_Mark_Specular.dds",
+      "Texture": "/Models/Mech/Players/Texture_Mark.dds"
+    }
+  ],
+  "Object13": [
+    {
+      "Effect": "ShaderModelEffect",
+      "Shininess": 0,
+      "SpecularPower": 0,
+      "NormalMap": "/Models/Mech/Players/Texture_Mark_Nomal.dds",
+      "SpecularMap": "/Models/Mech/Players/Texture_Mark_Specular.dds",
+      "Texture": "/Models/Mech/Players/Texture_Mark.dds"
+    }
+  ],
+  "Object05": [
+    {
+      "Effect": "ShaderModelEffect",
+      "Shininess": 0,
+      "SpecularPower": 0,
+      "NormalMap": "/Models/Mech/Players/Texture_Mark_Nomal.dds",
+      "SpecularMap": "/Models/Mech/Players/Texture_Mark_Specular.dds",
+      "Texture": "/Models/Mech/Players/Texture_Mark.dds"
+    }
+  ],
+  "Object04": [
+    {
+      "Effect": "ShaderModelEffect",
+      "Shininess": 0,
+      "SpecularPower": 0,
+      "NormalMap": "/Models/Mech/Players/Texture_Mark_Nomal.dds",
+      "SpecularMap": "/Models/Mech/Players/Texture_Mark_Specular.dds",
+      "Texture": "/Models/Mech/Players/Texture_Mark.dds"
+    }
+  ],
+  "Box01": [
+    {
+      "Effect": "ShaderModelEffect",
+      "Shininess": 0,
+      "SpecularPower": 0,
+      "NormalMap": "/Models/Mech/Players/Mark_New_Add_1_Normal.dds",
+      "SpecularMap": "/Models/Mech/Players/Mark_New_Add_1_Specular.dds",
+      "Texture": "/Models/Mech/Players/Mark_New_Add_1.dds"
+    }
+  ],
+  "Object03": [
+    {
+      "Effect": "ShaderModelEffect",
+      "Shininess": 0,
+      "SpecularPower": 0,
+      "NormalMap": "/Models/Mech/Players/Texture_Mark_Nomal.dds",
+      "SpecularMap": "/Models/Mech/Players/Texture_Mark_Specular.dds",
+      "Texture": "/Models/Mech/Players/Texture_Mark.dds"
+    }
+  ],
+  "Object07": [
+    {
+      "Effect": "ShaderModelEffect",
+      "Shininess": 0,
+      "SpecularPower": 0,
+      "NormalMap": "/Models/Mech/Players/Texture_Mark_Nomal.dds",
+      "SpecularMap": "/Models/Mech/Players/Texture_Mark_Specular.dds",
+      "Texture": "/Models/Mech/Players/Texture_Mark.dds"
+    }
+  ],
+  "Object02": [
+    {
+      "Effect": "ShaderModelEffect",
+      "Shininess": 0,
+      "SpecularPower": 0,
+      "NormalMap": "/Models/Mech/Players/Texture_Mark_Nomal.dds",
+      "SpecularMap": "/Models/Mech/Players/Texture_Mark_Specular.dds",
+      "Texture": "/Models/Mech/Players/Texture_Mark.dds"
+    }
+  ],
+  "Object06": [
+    {
+      "Effect": "ShaderModelEffect",
+      "Shininess": 0,
+      "SpecularPower": 0,
+      "NormalMap": "/Models/Mech/Players/Texture_Mark_Nomal.dds",
+      "SpecularMap": "/Models/Mech/Players/Texture_Mark_Specular.dds",
+      "Texture": "/Models/Mech/Players/Texture_Mark.dds"
+    }
+  ],
+  "Object12": [
+    {
+      "Effect": "ShaderModelEffect",
+      "Shininess": 0,
+      "SpecularPower": 0,
+      "NormalMap": "/Models/Mech/Players/Texture_Mark_Nomal.dds",
+      "SpecularMap": "/Models/Mech/Players/Texture_Mark_Specular.dds",
+      "Texture": "/Models/Mech/Players/Texture_Mark.dds"
+    }
+  ],
+  "Object10": [
+    {
+      "Effect": "ShaderModelEffect",
+      "Shininess": 0,
+      "SpecularPower": 0,
+      "NormalMap": "/Models/Mech/Players/Texture_Mark_Nomal.dds",
+      "SpecularMap": "/Models/Mech/Players/Texture_Mark_Specular.dds",
+      "Texture": "/Models/Mech/Players/Texture_Mark.dds"
+    }
+  ],
+  "Object11": [
+    {
+      "Effect": "ShaderModelEffect",
+      "Shininess": 0,
+      "SpecularPower": 0,
+      "NormalMap": "/Models/Mech/Players/Texture_Mark_Nomal.dds",
+      "SpecularMap": "/Models/Mech/Players/Texture_Mark_Specular.dds",
+      "Texture": "/Models/Mech/Players/Texture_Mark.dds"
+    }
+  ],
+  "Object01": [
+    {
+      "Effect": "ShaderModelEffect",
+      "Shininess": 0,
+      "SpecularPower": 0,
+      "NormalMap": "/Models/Mech/Players/Texture_Mark_Nomal.dds",
+      "SpecularMap": "/Models/Mech/Players/Texture_Mark_Specular.dds",
+      "Texture": "/Models/Mech/Players/Texture_Mark.dds"
+    }
+  ]
+}

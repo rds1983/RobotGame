@@ -1,0 +1,172 @@
+{
+  "Grund_Body": [
+    {
+      "Effect": "ShaderModelEffect",
+      "Shininess": 0,
+      "SpecularPower": 0,
+      "NormalMap": "/Models/Mech/Players/Texture_Grund_Gray_Normal.dds",
+      "SpecularMap": "/Models/Mech/Players/Texture_Grund_Gray_Specular.dds",
+      "Texture": "/Models/Mech/Players/Texture_Grund_Gray.dds"
+    }
+  ],
+  "Grund_Body_2": [
+    {
+      "Effect": "ShaderModelEffect",
+      "Shininess": 0,
+      "SpecularPower": 0,
+      "NormalMap": "/Models/Mech/Players/Grund_New_Add_1_Normal.dds",
+      "SpecularMap": "/Models/Mech/Players/Grund_New_Add_1_Specular.dds",
+      "Texture": "/Models/Mech/Players/Grund_New_Add_1.dds"
+    }
+  ],
+  "Grund_LeftArm": [
+    {
+      "Effect": "ShaderModelEffect",
+      "Shininess": 0,
+      "SpecularPower": 0,
+      "NormalMap": "/Models/Mech/Players/Texture_Grund_Gray_Normal.dds",
+      "SpecularMap": "/Models/Mech/Players/Texture_Grund_Gray_Specular.dds",
+      "Texture": "/Models/Mech/Players/Texture_Grund_Gray.dds"
+    }
+  ],
+  "Grund_LeftArmUpper_2": [
+    {
+      "Effect": "ShaderModelEffect",
+      "Shininess": 0,
+      "SpecularPower": 0,
+      "NormalMap": "/Models/Mech/Players/Grund_New_Add_1_Normal.dds",
+      "SpecularMap": "/Models/Mech/Players/Grund_New_Add_1_Specular.dds",
+      "Texture": "/Models/Mech/Players/Grund_New_Add_1.dds"
+    }
+  ],
+  "Grund_LeftArmUpper": [
+    {
+      "Effect": "ShaderModelEffect",
+      "Shininess": 0,
+      "SpecularPower": 0,
+      "NormalMap": "/Models/Mech/Players/Texture_Grund_Gray_Normal.dds",
+      "SpecularMap": "/Models/Mech/Players/Texture_Grund_Gray_Specular.dds",
+      "Texture": "/Models/Mech/Players/Texture_Grund_Gray.dds"
+    }
+  ],
+  "Grund_LeftClevis": [
+    {
+      "Effect": "ShaderModelEffect",
+      "Shininess": 0,
+      "SpecularPower": 0,
+      "NormalMap": "/Models/Mech/Players/Texture_Grund_Gray_Normal.dds",
+      "SpecularMap": "/Models/Mech/Players/Texture_Grund_Gray_Specular.dds",
+      "Texture": "/Models/Mech/Players/Texture_Grund_Gray.dds"
+    }
+  ],
+  "Grund_RightArm": [
+    {
+      "Effect": "ShaderModelEffect",
+      "Shininess": 0,
+      "SpecularPower": 0,
+      "NormalMap": "/Models/Mech/Players/Texture_Grund_Gray_Normal.dds",
+      "SpecularMap": "/Models/Mech/Players/Texture_Grund_Gray_Specular.dds",
+      "Texture": "/Models/Mech/Players/Texture_Grund_Gray.dds"
+    }
+  ],
+  "Grund_RightArmUpper_2": [
+    {
+      "Effect": "ShaderModelEffect",
+      "Shininess": 0,
+      "SpecularPower": 0,
+      "NormalMap": "/Models/Mech/Players/Grund_New_Add_1_Normal.dds",
+      "SpecularMap": "/Models/Mech/Players/Grund_New_Add_1_Specular.dds",
+      "Texture": "/Models/Mech/Players/Grund_New_Add_1.dds"
+    }
+  ],
+  "Grund_RightArmUpper": [
+    {
+      "Effect": "ShaderModelEffect",
+      "Shininess": 0,
+      "SpecularPower": 0,
+      "NormalMap": "/Models/Mech/Players/Texture_Grund_Gray_Normal.dds",
+      "SpecularMap": "/Models/Mech/Players/Texture_Grund_Gray_Specular.dds",
+      "Texture": "/Models/Mech/Players/Texture_Grund_Gray.dds"
+    }
+  ],
+  "Grund_RightClevis": [
+    {
+      "Effect": "ShaderModelEffect",
+      "Shininess": 0,
+      "SpecularPower": 0,
+      "NormalMap": "/Models/Mech/Players/Texture_Grund_Gray_Normal.dds",
+      "SpecularMap": "/Models/Mech/Players/Texture_Grund_Gray_Specular.dds",
+      "Texture": "/Models/Mech/Players/Texture_Grund_Gray.dds"
+    }
+  ],
+  "Grund_COM": [
+    {
+      "Effect": "ShaderModelEffect",
+      "Shininess": 0,
+      "SpecularPower": 0,
+      "NormalMap": "/Models/Mech/Players/Texture_Grund_Gray_Normal.dds",
+      "SpecularMap": "/Models/Mech/Players/Texture_Grund_Gray_Specular.dds",
+      "Texture": "/Models/Mech/Players/Texture_Grund_Gray.dds"
+    }
+  ],
+  "Grund_LeftFoot": [
+    {
+      "Effect": "ShaderModelEffect",
+      "Shininess": 0,
+      "SpecularPower": 0,
+      "NormalMap": "/Models/Mech/Players/Texture_Grund_Gray_Normal.dds",
+      "SpecularMap": "/Models/Mech/Players/Texture_Grund_Gray_Specular.dds",
+      "Texture": "/Models/Mech/Players/Texture_Grund_Gray.dds"
+    }
+  ],
+  "Grund_LeftToe": [
+    {
+      "Effect": "ShaderModelEffect",
+      "Shininess": 0,
+      "SpecularPower": 0,
+      "NormalMap": "/Models/Mech/Players/Texture_Grund_Gray_Normal.dds",
+      "SpecularMap": "/Models/Mech/Players/Texture_Grund_Gray_Specular.dds",
+      "Texture": "/Models/Mech/Players/Texture_Grund_Gray.dds"
+    }
+  ],
+  "Grund_LeftTight": [
+    {
+      "Effect": "ShaderModelEffect",
+      "Shininess": 0,
+      "SpecularPower": 0,
+      "NormalMap": "/Models/Mech/Players/Texture_Grund_Gray_Normal.dds",
+      "SpecularMap": "/Models/Mech/Players/Texture_Grund_Gray_Specular.dds",
+      "Texture": "/Models/Mech/Players/Texture_Grund_Gray.dds"
+    }
+  ],
+  "Grund_RightFoot": [
+    {
+      "Effect": "ShaderModelEffect",
+      "Shininess": 0,
+      "SpecularPower": 0,
+      "NormalMap": "/Models/Mech/Players/Texture_Grund_Gray_Normal.dds",
+      "SpecularMap": "/Models/Mech/Players/Texture_Grund_Gray_Specular.dds",
+      "Texture": "/Models/Mech/Players/Texture_Grund_Gray.dds"
+    }
+  ],
+  "Grund_RightToe": [
+    {
+      "Effect": "ShaderModelEffect",
+      "Shininess": 0,
+      "SpecularPower": 0,
+      "NormalMap": "/Models/Mech/Players/Texture_Grund_Gray_Normal.dds",
+      "SpecularMap": "/Models/Mech/Players/Texture_Grund_Gray_Specular.dds",
+      "Texture": "/Models/Mech/Players/Texture_Grund_Gray.dds"
+    }
+  ],
+  "Grund_RightTight": [
+    {
+      "Effect": "ShaderModelEffect",
+      "Shininess": 0,
+      "SpecularPower": 0,
+      "NormalMap": "/Models/Mech/Players/Texture_Grund_Gray_Normal.dds",
+      "SpecularMap": "/Models/Mech/Players/Texture_Grund_Gray_Specular.dds",
+      "Texture": "/Models/Mech/Players/Texture_Grund_Gray.dds"
+    }
+  ]
+}

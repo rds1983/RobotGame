@@ -1,0 +1,465 @@
+{
+  "Col": [
+    {
+      "Effect": "BasicEffect",
+      "DiffuseColor": [
+        0.41960788,
+        0.36078432,
+        0.7176471
+      ],
+      "EmissiveColor": [
+        0,
+        0,
+        0
+      ],
+      "SpecularColor": [
+        0,
+        0,
+        0
+      ],
+      "SpecularPower": 2,
+      "Alpha": 1,
+      "VertexColorEnabled": true,
+      "PreferPerPixelLighting": false,
+      "TextureEnabled": false
+    }
+  ],
+  "Box_Big": [
+    {
+      "Effect": "BasicEffect",
+      "DiffuseColor": [
+        0.8980393,
+        0.8980393,
+        0.8980393
+      ],
+      "EmissiveColor": [
+        0,
+        0,
+        0
+      ],
+      "SpecularColor": [
+        0,
+        0,
+        0
+      ],
+      "SpecularPower": 2,
+      "Alpha": 1,
+      "VertexColorEnabled": false,
+      "PreferPerPixelLighting": false,
+      "TextureEnabled": true,
+      "Texture": "/Models/World/Stage1/Box_Set.jpg"
+    }
+  ],
+  "Box_Big01": [
+    {
+      "Effect": "BasicEffect",
+      "DiffuseColor": [
+        0.8980393,
+        0.8980393,
+        0.8980393
+      ],
+      "EmissiveColor": [
+        0,
+        0,
+        0
+      ],
+      "SpecularColor": [
+        0,
+        0,
+        0
+      ],
+      "SpecularPower": 2,
+      "Alpha": 1,
+      "VertexColorEnabled": false,
+      "PreferPerPixelLighting": false,
+      "TextureEnabled": true,
+      "Texture": "/Models/World/Stage1/Box_Set.jpg"
+    }
+  ],
+  "Box_Big02": [
+    {
+      "Effect": "BasicEffect",
+      "DiffuseColor": [
+        0.8980393,
+        0.8980393,
+        0.8980393
+      ],
+      "EmissiveColor": [
+        0,
+        0,
+        0
+      ],
+      "SpecularColor": [
+        0,
+        0,
+        0
+      ],
+      "SpecularPower": 2,
+      "Alpha": 1,
+      "VertexColorEnabled": false,
+      "PreferPerPixelLighting": false,
+      "TextureEnabled": true,
+      "Texture": "/Models/World/Stage1/Box_Set.jpg"
+    }
+  ],
+  "Box_Big03": [
+    {
+      "Effect": "BasicEffect",
+      "DiffuseColor": [
+        0.8980393,
+        0.8980393,
+        0.8980393
+      ],
+      "EmissiveColor": [
+        0,
+        0,
+        0
+      ],
+      "SpecularColor": [
+        0,
+        0,
+        0
+      ],
+      "SpecularPower": 2,
+      "Alpha": 1,
+      "VertexColorEnabled": false,
+      "PreferPerPixelLighting": false,
+      "TextureEnabled": true,
+      "Texture": "/Models/World/Stage1/Box_Set.jpg"
+    }
+  ],
+  "Box_Big04": [
+    {
+      "Effect": "BasicEffect",
+      "DiffuseColor": [
+        0.8980393,
+        0.8980393,
+        0.8980393
+      ],
+      "EmissiveColor": [
+        0,
+        0,
+        0
+      ],
+      "SpecularColor": [
+        0,
+        0,
+        0
+      ],
+      "SpecularPower": 2,
+      "Alpha": 1,
+      "VertexColorEnabled": false,
+      "PreferPerPixelLighting": false,
+      "TextureEnabled": true,
+      "Texture": "/Models/World/Stage1/Box_Set.jpg"
+    }
+  ],
+  "Truck04_Col": [
+    {
+      "Effect": "BasicEffect",
+      "DiffuseColor": [
+        1,
+        1,
+        1
+      ],
+      "EmissiveColor": [
+        0,
+        0,
+        0
+      ],
+      "SpecularColor": [
+        1,
+        1,
+        1
+      ],
+      "SpecularPower": 16,
+      "Alpha": 1,
+      "VertexColorEnabled": false,
+      "PreferPerPixelLighting": false,
+      "TextureEnabled": false
+    }
+  ],
+  "Truck04_Col01": [
+    {
+      "Effect": "BasicEffect",
+      "DiffuseColor": [
+        1,
+        1,
+        1
+      ],
+      "EmissiveColor": [
+        0,
+        0,
+        0
+      ],
+      "SpecularColor": [
+        1,
+        1,
+        1
+      ],
+      "SpecularPower": 16,
+      "Alpha": 1,
+      "VertexColorEnabled": false,
+      "PreferPerPixelLighting": false,
+      "TextureEnabled": false
+    }
+  ],
+  "Truck04_Col04": [
+    {
+      "Effect": "BasicEffect",
+      "DiffuseColor": [
+        1,
+        1,
+        1
+      ],
+      "EmissiveColor": [
+        0,
+        0,
+        0
+      ],
+      "SpecularColor": [
+        1,
+        1,
+        1
+      ],
+      "SpecularPower": 16,
+      "Alpha": 1,
+      "VertexColorEnabled": false,
+      "PreferPerPixelLighting": false,
+      "TextureEnabled": false
+    }
+  ],
+  "Truck04_Col05": [
+    {
+      "Effect": "BasicEffect",
+      "DiffuseColor": [
+        1,
+        1,
+        1
+      ],
+      "EmissiveColor": [
+        0,
+        0,
+        0
+      ],
+      "SpecularColor": [
+        1,
+        1,
+        1
+      ],
+      "SpecularPower": 16,
+      "Alpha": 1,
+      "VertexColorEnabled": false,
+      "PreferPerPixelLighting": false,
+      "TextureEnabled": false
+    }
+  ],
+  "Barricade_2": [
+    {
+      "Effect": "BasicEffect",
+      "DiffuseColor": [
+        0.23137257,
+        0.23137257,
+        0.23137257
+      ],
+      "EmissiveColor": [
+        0,
+        0,
+        0
+      ],
+      "SpecularColor": [
+        0,
+        0,
+        0
+      ],
+      "SpecularPower": 1.9999999,
+      "Alpha": 1,
+      "VertexColorEnabled": false,
+      "PreferPerPixelLighting": false,
+      "TextureEnabled": true,
+      "Texture": "/Models/World/Stage1/Barricade_2.jpg"
+    }
+  ],
+  "Barricade_05": [
+    {
+      "Effect": "BasicEffect",
+      "DiffuseColor": [
+        0.23137257,
+        0.23137257,
+        0.23137257
+      ],
+      "EmissiveColor": [
+        0,
+        0,
+        0
+      ],
+      "SpecularColor": [
+        0,
+        0,
+        0
+      ],
+      "SpecularPower": 1.9999999,
+      "Alpha": 1,
+      "VertexColorEnabled": false,
+      "PreferPerPixelLighting": false,
+      "TextureEnabled": true,
+      "Texture": "/Models/World/Stage1/Barricade_2.jpg"
+    }
+  ],
+  "Barricade_06": [
+    {
+      "Effect": "BasicEffect",
+      "DiffuseColor": [
+        0.23137257,
+        0.23137257,
+        0.23137257
+      ],
+      "EmissiveColor": [
+        0,
+        0,
+        0
+      ],
+      "SpecularColor": [
+        0,
+        0,
+        0
+      ],
+      "SpecularPower": 1.9999999,
+      "Alpha": 1,
+      "VertexColorEnabled": false,
+      "PreferPerPixelLighting": false,
+      "TextureEnabled": true,
+      "Texture": "/Models/World/Stage1/Barricade_2.jpg"
+    }
+  ],
+  "Barricade_07": [
+    {
+      "Effect": "BasicEffect",
+      "DiffuseColor": [
+        0.23137257,
+        0.23137257,
+        0.23137257
+      ],
+      "EmissiveColor": [
+        0,
+        0,
+        0
+      ],
+      "SpecularColor": [
+        0,
+        0,
+        0
+      ],
+      "SpecularPower": 1.9999999,
+      "Alpha": 1,
+      "VertexColorEnabled": false,
+      "PreferPerPixelLighting": false,
+      "TextureEnabled": true,
+      "Texture": "/Models/World/Stage1/Barricade_2.jpg"
+    }
+  ],
+  "Barricade_08": [
+    {
+      "Effect": "BasicEffect",
+      "DiffuseColor": [
+        0.23137257,
+        0.23137257,
+        0.23137257
+      ],
+      "EmissiveColor": [
+        0,
+        0,
+        0
+      ],
+      "SpecularColor": [
+        0,
+        0,
+        0
+      ],
+      "SpecularPower": 1.9999999,
+      "Alpha": 1,
+      "VertexColorEnabled": false,
+      "PreferPerPixelLighting": false,
+      "TextureEnabled": true,
+      "Texture": "/Models/World/Stage1/Barricade_2.jpg"
+    }
+  ],
+  "Barricade_09": [
+    {
+      "Effect": "BasicEffect",
+      "DiffuseColor": [
+        0.23137257,
+        0.23137257,
+        0.23137257
+      ],
+      "EmissiveColor": [
+        0,
+        0,
+        0
+      ],
+      "SpecularColor": [
+        0,
+        0,
+        0
+      ],
+      "SpecularPower": 1.9999999,
+      "Alpha": 1,
+      "VertexColorEnabled": false,
+      "PreferPerPixelLighting": false,
+      "TextureEnabled": true,
+      "Texture": "/Models/World/Stage1/Barricade_2.jpg"
+    }
+  ],
+  "Barricade_10": [
+    {
+      "Effect": "BasicEffect",
+      "DiffuseColor": [
+        0.23137257,
+        0.23137257,
+        0.23137257
+      ],
+      "EmissiveColor": [
+        0,
+        0,
+        0
+      ],
+      "SpecularColor": [
+        0,
+        0,
+        0
+      ],
+      "SpecularPower": 1.9999999,
+      "Alpha": 1,
+      "VertexColorEnabled": false,
+      "PreferPerPixelLighting": false,
+      "TextureEnabled": true,
+      "Texture": "/Models/World/Stage1/Barricade_2.jpg"
+    }
+  ],
+  "Barricade_11": [
+    {
+      "Effect": "BasicEffect",
+      "DiffuseColor": [
+        0.23137257,
+        0.23137257,
+        0.23137257
+      ],
+      "EmissiveColor": [
+        0,
+        0,
+        0
+      ],
+      "SpecularColor": [
+        0,
+        0,
+        0
+      ],
+      "SpecularPower": 1.9999999,
+      "Alpha": 1,
+      "VertexColorEnabled": false,
+      "PreferPerPixelLighting": false,
+      "TextureEnabled": true,
+      "Texture": "/Models/World/Stage1/Barricade_2.jpg"
+    }
+  ]
+}
