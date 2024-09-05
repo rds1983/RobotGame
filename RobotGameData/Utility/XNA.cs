@@ -60,12 +60,6 @@ namespace RobotGameData.Utility
 			return (ModelMeshPart)constructorInfo.Invoke(new object[0]);
 		}
 
-		public static void SetEffect(this ModelMeshPart meshPart, Effect effect)
-		{
-			SetProperty(meshPart, "Effect", effect);
-		}
-
-
 		public static void SetIndexBuffer(this ModelMeshPart meshPart, IndexBuffer indexBuffer)
 		{
 			SetProperty(meshPart, "IndexBuffer", indexBuffer);
@@ -95,14 +89,14 @@ namespace RobotGameData.Utility
 
 		public static void AddChild(this ModelBone bone, ModelBone child)
 		{
-			var methodInfo = typeof(ModelBone).GetMethod("AddChild");
+			var methodInfo = typeof(ModelBone).GetMethod("AddChild", BindingFlags.Instance | BindingFlags.NonPublic);
 
 			methodInfo.Invoke(bone, new object[] { child });
 		}
 
 		public static void AddMesh(this ModelBone bone, ModelMesh mesh)
 		{
-			var methodInfo = typeof(ModelBone).GetMethod("AddMesh");
+			var methodInfo = typeof(ModelBone).GetMethod("AddMesh", BindingFlags.Instance | BindingFlags.NonPublic);
 
 			methodInfo.Invoke(bone, new object[] { mesh });
 		}

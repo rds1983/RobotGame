@@ -71,6 +71,7 @@ namespace RobotGameData
 		private readonly List<ModelMesh> _meshes = new List<ModelMesh>();
 		private Model _model;
 		private readonly List<ModelBone> _allNodes = new List<ModelBone>();
+		private readonly List<Vector3> _allPositions = new List<Vector3>();
 		private readonly Dictionary<int, ModelBoneCollection> _skinCache = new Dictionary<int, ModelBoneCollection>();
 
 		private byte[] FileResolver(string path)
@@ -243,8 +244,11 @@ namespace RobotGameData
 			foreach (var gltfMesh in _gltf.Meshes)
 			{
 				var meshes = new List<ModelMeshPart>();
+				var effects = new List<Effect>();
+				var positions = new List<Vector3>();
 				foreach (var primitive in gltfMesh.Primitives)
 				{
+					positions.Clear();
 					if (primitive.Mode != MeshPrimitive.ModeEnum.TRIANGLES)
 					{
 						throw new NotSupportedException($"Primitive mode {primitive.Mode} isn't supported.");
@@ -330,7 +334,6 @@ namespace RobotGameData
 
 					// Set vertex data
 					var vertexData = new byte[vertexCount.Value * vd.VertexStride];
-					var positions = new List<Vector3>();
 					offset = 0;
 					for (var i = 0; i < vertexInfos.Count; ++i)
 					{
@@ -398,11 +401,11 @@ namespace RobotGameData
 					{
 						DiffuseColor = Color.White.ToVector3()
 					};
+					effects.Add(effect);
 
 					var mesh = XNA.CreateModelMeshPart();
 					mesh.SetVertexBuffer(vertexBuffer);
 					mesh.SetIndexBuffer(indexBuffer);
-					mesh.SetEffect(effect);
 
 					if (primitive.Material != null)
 					{
@@ -441,7 +444,14 @@ namespace RobotGameData
 				}
 
 				var modelMesh = XNA.CreateModelMesh(meshes);
+
+				for (var i = 0; i < effects.Count; ++i)
+				{
+					meshes[i].Effect = effects[i];
+				}
+
 				_meshes.Add(modelMesh);
+				_allPositions.AddRange(positions);
 			}
 		}
 
@@ -555,6 +565,12 @@ namespace RobotGameData
 			}
 
 			_model = XNA.CreateModel(bones, _meshes);
+
+			var tagData = new Dictionary<string, object>();
+			tagData["Vertices"] = _allPositions.ToArray();
+			tagData["BoundingSphere"] = BoundingSphere.CreateFromPoints(_allPositions);
+
+			_model.Tag = tagData;
 
 /*			if (_gltf.Animations != null)
 			{

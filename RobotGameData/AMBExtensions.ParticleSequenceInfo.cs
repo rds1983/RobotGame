@@ -7,6 +7,8 @@ namespace RobotGameData
 	{
 		private static AssetLoader<ParticleSequenceInfo> _particleSequenceInfoLoader = (manager, assetName, settings, tag) =>
 		{
+			var data = manager.ReadAsString(assetName);
+
 			return null;
 		};
 

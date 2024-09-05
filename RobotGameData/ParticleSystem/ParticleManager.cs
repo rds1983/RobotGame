@@ -163,7 +163,7 @@ namespace RobotGameData.ParticleSystem
 			if (particleOn == false)
 				return;
 
-			Stream stream = File.OpenRead(Path.Combine("Content", fileName));
+			Stream stream = File.OpenRead(Path.Combine("Assets", fileName));
 
 			XmlTextReader reader = new XmlTextReader(stream);
 			XmlSerializer serializer = new XmlSerializer(typeof(ParticleReaderList));
