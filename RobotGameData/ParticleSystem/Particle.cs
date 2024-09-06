@@ -15,8 +15,9 @@ using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using RobotGameData.GameObject;
 using RobotGameData.Render;
+using RobotGameData.GameInterface;
+using RobotGameData.Resource;
 using RobotGameData.Helper;
-using AssetManagementBase;
 #endregion
 
 namespace RobotGameData.ParticleSystem
@@ -247,8 +248,11 @@ namespace RobotGameData.ParticleSystem
 				string resourceFullPath =
 							Path.Combine(resourcePath, sequenceInfo.TextureFileName);
 
+				GameResourceTexture2D resource =
+							FrameworkCore.ResourceManager.LoadTexture(resourceFullPath);
+
 				//  Set to texture
-				Texture = FrameworkCore.AssetManager.LoadTexture2D(FrameworkCore.GraphicsDevice, resourceFullPath);
+				Texture = resource.Texture2D;
 
 				//  Set to texture in TextureSequence 
 				if (TextureSequence != null)

@@ -8,10 +8,10 @@
 #endregion
 
 #region Using Statements
-using AssetManagementBase;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using RobotGameData.Render;
+using RobotGameData.Resource;
 #endregion
 
 namespace RobotGameData.GameObject
@@ -43,7 +43,7 @@ namespace RobotGameData.GameObject
 		/// Constructor.
 		/// </summary>
 		/// <param name="resource">model resource</param>
-		public GameWorld(Model resource)
+		public GameWorld(GameResourceModel resource)
 			: base(resource) { }
 
 		/// <summary>
@@ -74,7 +74,9 @@ namespace RobotGameData.GameObject
 		/// <param name="file">cube map texture file name</param>
 		public void LoadTextureCubeMap(string file)
 		{
-			this.TextureCubeMap = FrameworkCore.AssetManager.LoadTextureCube(FrameworkCore.GraphicsDevice, file);
+			this.TextureCubeMap = FrameworkCore.ContentManager.Load<TextureCube>(
+										file);
+
 		}
 
 		protected override void Dispose(bool disposing)

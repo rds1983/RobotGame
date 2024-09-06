@@ -15,7 +15,7 @@ using Microsoft.Xna.Framework.Graphics;
 using RobotGameData;
 using RobotGameData.GameObject;
 using RobotGameData.Collision;
-using AssetManagementBase;
+using RobotGameData.Resource;
 #endregion
 
 namespace RobotGame
@@ -177,14 +177,14 @@ namespace RobotGame
 			colLayerVersusTeam = RobotGameGame.CurrentGameLevel.CollisionVersusTeam;
 
 			//  creates a simple shadow.
-			var resource =
-					Assets.AssetManager.LoadTexture2D(FrameworkCore.GraphicsDevice, "Textures/shadow.png");
+			GameResourceTexture2D resource =
+					FrameworkCore.ResourceManager.LoadTexture("Textures/shadow");
 
 			simpleShadow = new GameQuad(new Vector3(0.0f, 0.02f, 0.0f),
 						Vector3.Up, Vector3.Forward, 3.0f, 3.0f);
 
 			simpleShadow.Name = "simple shadow";
-			simpleShadow.Texture = resource;
+			simpleShadow.Texture = resource.Texture2D;
 			simpleShadow.LightingEnabled = false;
 			simpleShadow.Alpha = 0.6f;
 			simpleShadow.AlphaBlendEnable = true;
@@ -494,5 +494,6 @@ namespace RobotGame
 		}
 
 		#endregion
+
 	}
 }

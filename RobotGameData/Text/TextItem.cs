@@ -9,7 +9,6 @@
 
 #region Using Statements
 using System;
-using FontStashSharp;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using RobotGameData.GameInterface;
@@ -25,7 +24,7 @@ namespace RobotGameData.Text
 		#region Fields
 
 		protected int id = 0;
-		protected SpriteFontBase spriteFont = null;
+		protected SpriteFont spriteFont = null;
 		protected string stringText = String.Empty;
 		protected Vector2 position = Vector2.Zero;
 		protected Color textColor = Color.White;
@@ -49,7 +48,7 @@ namespace RobotGameData.Text
 			}
 		}
 
-		public SpriteFontBase Font
+		public SpriteFont Font
 		{
 			get { return spriteFont; }
 			set { spriteFont = value; }
@@ -118,7 +117,7 @@ namespace RobotGameData.Text
 		/// <param name="x">position x</param>
 		/// <param name="y">position y</param>
 		/// <param name="color">text color</param>
-		public TextItem(SpriteFontBase font, string text, int x, int y, Color color)
+		public TextItem(SpriteFont font, string text, int x, int y, Color color)
 		{
 			if (font == null)
 			{

@@ -134,8 +134,8 @@ namespace RobotGame
 		public override void LoadContent()
 		{
 			//  loads image
-			this.spriteBG.Create(1, "Textures/Loading.jpg");
-			this.spriteLoadingText.Create(2, "Textures/Loading_Text.png");
+			this.spriteBG.Create(1, "Textures/Loading");
+			this.spriteLoadingText.Create(2, "Textures/Loading_Text");
 		}
 
 		/// <summary>

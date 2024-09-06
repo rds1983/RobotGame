@@ -15,6 +15,7 @@ using Microsoft.Xna.Framework.Audio;
 using Microsoft.Xna.Framework.Input;
 using RobotGameData;
 using RobotGameData.Screen;
+using RobotGameData.Resource;
 using RobotGameData.Input;
 using RobotGameData.GameObject;
 using RobotGameData.Camera;
@@ -22,8 +23,6 @@ using RobotGameData.Collision;
 using RobotGameData.Render;
 using RobotGameData.Text;
 using RobotGameData.ParticleSystem;
-using FontStashSharp;
-using AssetManagementBase;
 #endregion
 
 namespace RobotGame
@@ -106,7 +105,7 @@ namespace RobotGame
 		protected GameSprite2D spriteHudAiming = null;
 		protected GameSprite2D spriteHudState = null;
 
-		protected SpriteFontBase fontHud = null;
+		protected SpriteFont fontHud = null;
 		protected GameText[] textHudCurrentAmmo = null;
 		protected GameText[] textHudRemainAmmo = null;
 		protected GameText[] textPickup = null;
@@ -408,16 +407,26 @@ namespace RobotGame
 		/// <param name="loadAllContent"></param>
 		public override void LoadContent()
 		{
-			this.fontHud = Assets.FontSystem.GetFont(16);
+			this.fontHud = FrameworkCore.FontManager.CreateFont(
+												"Hud Font", "Font/RobotGame_font");
 
 			//  Load a booster effect
-			boosterEffect = Assets.AssetManager.LoadEffect(GraphicsDevice, "Effects/BoosterEffect");
+			GameResourceEffect loadedEffect =
+					FrameworkCore.ResourceManager.LoadEffect("Effects/BoosterEffect");
+
+			boosterEffect = loadedEffect.Effect;
 
 			//  Load a glow effect
-			postScreenEffect = Assets.AssetManager.LoadEffect(GraphicsDevice, "Effects/PostScreen");
+			loadedEffect =
+					FrameworkCore.ResourceManager.LoadEffect("Effects/PostScreen");
+
+			postScreenEffect = loadedEffect.Effect;
 
 			// Load a gaussian blur effect
-			gaussianBlurEffect = Assets.AssetManager.LoadEffect(GraphicsDevice, "Effects/GaussianBlur");
+			loadedEffect =
+					FrameworkCore.ResourceManager.LoadEffect("Effects/GaussianBlur");
+
+			gaussianBlurEffect = loadedEffect.Effect;
 
 			FrameworkCore.GameEventManager.Enable = false;
 

@@ -118,12 +118,12 @@ namespace RobotGame
 		{
 			//  loads a title image.
 			{
-				this.spriteMain.Create(1, "Textures/MainTitle.jpg");
+				this.spriteMain.Create(1, "Textures/MainTitle");
 			}
 
 			//  loads button images.
 			{
-				this.spriteButton.Create(3, "Textures/MainMenuButton.png");
+				this.spriteButton.Create(3, "Textures/MainMenuButton");
 			}
 		}
 

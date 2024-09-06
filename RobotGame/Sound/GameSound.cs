@@ -197,9 +197,9 @@ namespace RobotGame
 		{
 			//  initializes audio settings.
 			FrameworkCore.SoundManager.Initialize(
-						"Assets/Audio/RobotGame.xgs",
-						"Assets/Audio/RobotGame.xwb",
-						"Assets/Audio/RobotGame.xsb");
+						"Content/Audio/RobotGame.xgs",
+						"Content/Audio/RobotGame.xwb",
+						"Content/Audio/RobotGame.xsb");
 
 			//  gets the categories needed to change volume and pitching
 			FrameworkCore.SoundManager.AddSoundCategory(

@@ -10,12 +10,12 @@
 #region Using Statements
 using System;
 using Microsoft.Xna.Framework;
+using Microsoft.Xna.Framework.Graphics;
 using RobotGameData;
 using RobotGameData.Screen;
 using RobotGameData.GameObject;
 using RobotGameData.Text;
 using RobotGameData.Render;
-using FontStashSharp;
 #endregion
 
 namespace RobotGame
@@ -33,7 +33,7 @@ namespace RobotGame
 		GameSceneNode refScene2DTopRoot = null;
 		GameSprite2D spriteBox = null;
 		Sprite2DObject spriteObjBox = null;
-		SpriteFontBase messageFont = null;
+		SpriteFont messageFont = null;
 		TextItem textMessageItem = null;
 		TextItem textControlsItem = null;
 		float inputTermTime = 0.0f;
@@ -65,7 +65,8 @@ namespace RobotGame
 			TransitionOffTime = TimeSpan.FromSeconds(0.2f);
 
 			//  Create messagebox font
-			this.messageFont = Assets.FontSystem.GetFont(20);
+			this.messageFont = FrameworkCore.FontManager.CreateFont("MessageFont",
+				"Font/RobotGame_font");
 
 			this.controls = "\n(A) button OK\n(B) button Cancel";
 
@@ -94,7 +95,7 @@ namespace RobotGame
 		public override void LoadContent()
 		{
 			spriteBox = new GameSprite2D();
-			spriteBox.Create(1, "Textures/Text_Window.png");
+			spriteBox.Create(1, "Textures/Text_Window");
 
 			refScene2DTopRoot.AddChild(spriteBox);
 			spriteObjBox = spriteBox.AddSprite(0, "MessageBox frame");

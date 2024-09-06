@@ -8,7 +8,6 @@
 #endregion
 
 #region Using Statements
-using FontStashSharp;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using RobotGameData.Render;
@@ -32,7 +31,7 @@ namespace RobotGameData.GameObject
 
 		#region Properties
 
-		public SpriteFontBase Font
+		public SpriteFont Font
 		{
 			get { return this.textItem.Font; }
 			set { this.textItem.Font = value; }
@@ -97,7 +96,7 @@ namespace RobotGameData.GameObject
 		/// <param name="x">position x</param>
 		/// <param name="y">position y</param>
 		/// <param name="color">text color</param>
-		public GameText(SpriteFontBase font, string text, int x, int y, Color color)
+		public GameText(SpriteFont font, string text, int x, int y, Color color)
 			: base()
 		{
 			Create(font, text, x, y, color);
@@ -111,7 +110,6 @@ namespace RobotGameData.GameObject
 		/// <param name="renderTracer"></param>
 		protected override void OnDraw(RenderTracer renderTracer)
 		{
-			var scale = new Vector2(textItem.Scale, textItem.Scale);
 			renderTracer.SpriteBatch.DrawString(this.textItem.Font,
 												this.textItem.Text,
 												new Vector2(this.textItem.PosX,
@@ -119,7 +117,9 @@ namespace RobotGameData.GameObject
 												this.textItem.Color,
 												this.textItem.Rotation,
 												Vector2.Zero,
-												scale);
+												this.textItem.Scale,
+												SpriteEffects.None,
+												1.0f);
 		}
 
 		/// <summary>
@@ -131,7 +131,7 @@ namespace RobotGameData.GameObject
 		/// <param name="x">2D screen x-position (pixel)</param>
 		/// <param name="y">2D screen y-position (pixel)</param>
 		/// <param name="color">text color</param>
-		public void Create(SpriteFontBase font, string text, int x, int y, Color color)
+		public void Create(SpriteFont font, string text, int x, int y, Color color)
 		{
 			this.textItem.Font = font;
 			this.textItem.Text = text;

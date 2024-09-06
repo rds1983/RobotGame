@@ -42,7 +42,7 @@ namespace RobotGameData.Helper
 		public static object LoadData(string fileName, Type type)
 		{
 			string path = fileName;
-			Stream stream = File.OpenRead(Path.Combine("Assets", path));
+			Stream stream = File.OpenRead(Path.Combine("Content", path));
 
 			XmlSerializer serializer = new XmlSerializer(type);
 

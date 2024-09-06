@@ -12,29 +12,13 @@ using System;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using RobotGameData.Render;
+using RobotGameData.Resource;
 using RobotGameData.Collision;
 #endregion
 
 
 namespace RobotGameData.GameObject
 {
-	/// <summary>
-	/// saves the transform matrix of the read-in model class and the bones of 
-	/// the model’s initial state.
-	/// </summary>
-	public class ModelData
-	{
-		public Model model = null;
-		public Matrix[] boneTransforms = null;
-
-		public ModelData(Model m)
-		{
-			model = m;
-			boneTransforms = new Matrix[m.Bones.Count];
-			m.CopyBoneTransformsTo(boneTransforms);
-		}
-	}
-
 	/// <summary>
 	/// It contains and processes the XNA’s “Model” variable.
 	/// </summary>
@@ -249,13 +233,13 @@ namespace RobotGameData.GameObject
 		/// Constructor.
 		/// </summary>
 		/// <param name="resource">model resource</param>
-		public GameModel(Model resource)
+		public GameModel(GameResourceModel resource)
 			: base()
 		{
 			if (resource == null)
 				throw new ArgumentNullException("resource");
 
-			BindModel(resource);
+			BindModel(resource.ModelData);
 		}
 
 		public GameModel(string fileName)
@@ -505,11 +489,27 @@ namespace RobotGameData.GameObject
 		public void LoadModel(string modelFileName)
 		{
 			//  First, Find the model resource from ResourceManager by key
-			var model = FrameworkCore.AssetManager.LoadModel(modelFileName);
-			BindModel(model);
-		}
+			GameResourceModel resource =
+				FrameworkCore.ResourceManager.GetModel(modelFileName);
 
-		private void BindModel(Model model) => BindModel(new ModelData(model));
+			if (resource == null)
+			{
+				// Load the model.
+				FrameworkCore.ResourceManager.LoadContent<Model>(modelFileName,
+					modelFileName);
+
+				resource = FrameworkCore.ResourceManager.GetModel(modelFileName);
+			}
+
+			//  Load and find resource failed.
+			if (resource == null)
+			{
+				throw new ArgumentException("Cannot load the model : " +
+					modelFileName);
+			}
+
+			BindModel(resource.ModelData);
+		}
 
 		public virtual void BindModel(ModelData modelData)
 		{

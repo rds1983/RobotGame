@@ -6,10 +6,8 @@
 // Copyright (C) Microsoft Corporation. All rights reserved.
 //-----------------------------------------------------------------------------
 #endregion
-
 #region Using Statements
 using System.Collections.Generic;
-using FontStashSharp;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 #endregion
@@ -84,7 +82,9 @@ namespace RobotGameData.Text
 											item.Color,
 											item.Rotation,
 											Vector2.Zero,
-											new Vector2(item.Scale, item.Scale));
+											item.Scale,
+											SpriteEffects.None,
+											1.0f);
 				}
 			}
 
@@ -121,7 +121,7 @@ namespace RobotGameData.Text
 		/// <param name="y">screen y-position</param>
 		/// <param name="color">text color</param>
 		/// <returns>text item</returns>
-		public TextItem AddText(SpriteFontBase font, string text, int x, int y, Color color)
+		public TextItem AddText(SpriteFont font, string text, int x, int y, Color color)
 		{
 			TextItem item = new TextItem(font, text, x, y, color);
 
