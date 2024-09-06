@@ -6,7 +6,7 @@ Port of XNA RobotGame Sample to MonoGame/FNA
 FNA is supposed to be in the same folder as this repo.
 
 # Credits
-* Original game source for XNA 4 had been grabbed from here: https://www.moddb.com/downloads/xna-40-robot-game
-* Assets had been processed using XNA for VS 2017: https://github.com/SimonDarksideJ/XNAGameStudio
-* The instruction on how to install XNA for VS 2017: https://gist.github.com/roy-t/2f089414078bf7218350e8c847951255
-* FNA: https://fna-xna.github.io/ 
+* [Original game source for XNA 4](https://www.moddb.com/downloads/xna-40-robot-game)
+* [XNA for VS 2017](https://github.com/SimonDarksideJ/XNAGameStudio)
+* [Instruction on how to install XNA for VS 2017](https://gist.github.com/roy-t/2f089414078bf7218350e8c847951255)
+* [FNA](https://fna-xna.github.io/)
