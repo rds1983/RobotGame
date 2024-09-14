@@ -1,0 +1,440 @@
+{
+  "Base": [
+    {
+      "Effect": "BasicEffect",
+      "DiffuseColor": [
+        1,
+        1,
+        1
+      ],
+      "EmissiveColor": [
+        0,
+        0,
+        0
+      ],
+      "SpecularColor": [
+        0,
+        0,
+        0
+      ],
+      "SpecularPower": 2,
+      "Alpha": 1,
+      "VertexColorEnabled": true,
+      "PreferPerPixelLighting": false,
+      "TextureEnabled": true,
+      "Texture": "/Models/World/Stage2/Floor04.jpg"
+    },
+    {
+      "Effect": "BasicEffect",
+      "DiffuseColor": [
+        1,
+        1,
+        1
+      ],
+      "EmissiveColor": [
+        0,
+        0,
+        0
+      ],
+      "SpecularColor": [
+        0,
+        0,
+        0
+      ],
+      "SpecularPower": 2,
+      "Alpha": 1,
+      "VertexColorEnabled": true,
+      "PreferPerPixelLighting": false,
+      "TextureEnabled": true,
+      "Texture": "/Models/World/Stage2/Floor06.jpg"
+    },
+    {
+      "Effect": "BasicEffect",
+      "DiffuseColor": [
+        1,
+        1,
+        1
+      ],
+      "EmissiveColor": [
+        0,
+        0,
+        0
+      ],
+      "SpecularColor": [
+        0,
+        0,
+        0
+      ],
+      "SpecularPower": 2,
+      "Alpha": 1,
+      "VertexColorEnabled": true,
+      "PreferPerPixelLighting": false,
+      "TextureEnabled": true,
+      "Texture": "/Models/World/Stage2/Floor02.jpg"
+    },
+    {
+      "Effect": "BasicEffect",
+      "DiffuseColor": [
+        1,
+        1,
+        1
+      ],
+      "EmissiveColor": [
+        0,
+        0,
+        0
+      ],
+      "SpecularColor": [
+        0,
+        0,
+        0
+      ],
+      "SpecularPower": 2,
+      "Alpha": 1,
+      "VertexColorEnabled": true,
+      "PreferPerPixelLighting": false,
+      "TextureEnabled": true,
+      "Texture": "/Models/World/Stage2/Floor01.jpg"
+    },
+    {
+      "Effect": "BasicEffect",
+      "DiffuseColor": [
+        1,
+        1,
+        1
+      ],
+      "EmissiveColor": [
+        0,
+        0,
+        0
+      ],
+      "SpecularColor": [
+        0,
+        0,
+        0
+      ],
+      "SpecularPower": 2,
+      "Alpha": 1,
+      "VertexColorEnabled": true,
+      "PreferPerPixelLighting": false,
+      "TextureEnabled": true,
+      "Texture": "/Models/World/Stage2/Floor05.jpg"
+    },
+    {
+      "Effect": "BasicEffect",
+      "DiffuseColor": [
+        1,
+        1,
+        1
+      ],
+      "EmissiveColor": [
+        0,
+        0,
+        0
+      ],
+      "SpecularColor": [
+        0,
+        0,
+        0
+      ],
+      "SpecularPower": 2,
+      "Alpha": 1,
+      "VertexColorEnabled": true,
+      "PreferPerPixelLighting": false,
+      "TextureEnabled": true,
+      "Texture": "/Models/World/Stage2/Side.jpg"
+    },
+    {
+      "Effect": "BasicEffect",
+      "DiffuseColor": [
+        1,
+        1,
+        1
+      ],
+      "EmissiveColor": [
+        0,
+        0,
+        0
+      ],
+      "SpecularColor": [
+        0,
+        0,
+        0
+      ],
+      "SpecularPower": 2,
+      "Alpha": 1,
+      "VertexColorEnabled": true,
+      "PreferPerPixelLighting": false,
+      "TextureEnabled": true,
+      "Texture": "/Models/World/Stage2/ControlCenterTiles01.jpg"
+    },
+    {
+      "Effect": "BasicEffect",
+      "DiffuseColor": [
+        1,
+        1,
+        1
+      ],
+      "EmissiveColor": [
+        0,
+        0,
+        0
+      ],
+      "SpecularColor": [
+        0,
+        0,
+        0
+      ],
+      "SpecularPower": 2,
+      "Alpha": 1,
+      "VertexColorEnabled": true,
+      "PreferPerPixelLighting": false,
+      "TextureEnabled": true,
+      "Texture": "/Models/World/Stage2/Floor07.jpg"
+    },
+    {
+      "Effect": "BasicEffect",
+      "DiffuseColor": [
+        1,
+        1,
+        1
+      ],
+      "EmissiveColor": [
+        0,
+        0,
+        0
+      ],
+      "SpecularColor": [
+        0,
+        0,
+        0
+      ],
+      "SpecularPower": 2,
+      "Alpha": 1,
+      "VertexColorEnabled": true,
+      "PreferPerPixelLighting": false,
+      "TextureEnabled": true,
+      "Texture": "/Models/World/Stage2/ControlCenterTiles03.jpg"
+    },
+    {
+      "Effect": "BasicEffect",
+      "DiffuseColor": [
+        1,
+        1,
+        1
+      ],
+      "EmissiveColor": [
+        0,
+        0,
+        0
+      ],
+      "SpecularColor": [
+        0,
+        0,
+        0
+      ],
+      "SpecularPower": 2,
+      "Alpha": 1,
+      "VertexColorEnabled": true,
+      "PreferPerPixelLighting": false,
+      "TextureEnabled": true,
+      "Texture": "/Models/World/Stage2/ControlCenterTiles02.jpg"
+    },
+    {
+      "Effect": "BasicEffect",
+      "DiffuseColor": [
+        1,
+        1,
+        1
+      ],
+      "EmissiveColor": [
+        0,
+        0,
+        0
+      ],
+      "SpecularColor": [
+        0,
+        0,
+        0
+      ],
+      "SpecularPower": 2,
+      "Alpha": 1,
+      "VertexColorEnabled": true,
+      "PreferPerPixelLighting": false,
+      "TextureEnabled": true,
+      "Texture": "/Models/World/Stage2/ControlCenterText01.jpg"
+    },
+    {
+      "Effect": "BasicEffect",
+      "DiffuseColor": [
+        1,
+        1,
+        1
+      ],
+      "EmissiveColor": [
+        0,
+        0,
+        0
+      ],
+      "SpecularColor": [
+        0,
+        0,
+        0
+      ],
+      "SpecularPower": 2,
+      "Alpha": 1,
+      "VertexColorEnabled": true,
+      "PreferPerPixelLighting": false,
+      "TextureEnabled": true,
+      "Texture": "/Models/World/Stage2/ControlCenterText02.jpg"
+    },
+    {
+      "Effect": "BasicEffect",
+      "DiffuseColor": [
+        1,
+        1,
+        1
+      ],
+      "EmissiveColor": [
+        0,
+        0,
+        0
+      ],
+      "SpecularColor": [
+        0,
+        0,
+        0
+      ],
+      "SpecularPower": 2,
+      "Alpha": 1,
+      "VertexColorEnabled": true,
+      "PreferPerPixelLighting": false,
+      "TextureEnabled": true,
+      "Texture": "/Models/World/Stage2/Texture_ControlCenterWindow01.jpg"
+    },
+    {
+      "Effect": "BasicEffect",
+      "DiffuseColor": [
+        1,
+        1,
+        1
+      ],
+      "EmissiveColor": [
+        0,
+        0,
+        0
+      ],
+      "SpecularColor": [
+        0,
+        0,
+        0
+      ],
+      "SpecularPower": 2,
+      "Alpha": 1,
+      "VertexColorEnabled": true,
+      "PreferPerPixelLighting": false,
+      "TextureEnabled": true,
+      "Texture": "/Models/World/Stage2/Texture_Door01.jpg"
+    },
+    {
+      "Effect": "BasicEffect",
+      "DiffuseColor": [
+        1,
+        1,
+        1
+      ],
+      "EmissiveColor": [
+        0,
+        0,
+        0
+      ],
+      "SpecularColor": [
+        0,
+        0,
+        0
+      ],
+      "SpecularPower": 2,
+      "Alpha": 1,
+      "VertexColorEnabled": true,
+      "PreferPerPixelLighting": false,
+      "TextureEnabled": true,
+      "Texture": "/Models/World/Stage2/Floor03.jpg"
+    },
+    {
+      "Effect": "BasicEffect",
+      "DiffuseColor": [
+        1,
+        1,
+        1
+      ],
+      "EmissiveColor": [
+        0,
+        0,
+        0
+      ],
+      "SpecularColor": [
+        0,
+        0,
+        0
+      ],
+      "SpecularPower": 1.9999999,
+      "Alpha": 1,
+      "VertexColorEnabled": true,
+      "PreferPerPixelLighting": false,
+      "TextureEnabled": true,
+      "Texture": "/Models/World/Stage2/Texture_MiddleCanon.jpg"
+    }
+  ],
+  "B_Base_Alpa": [
+    {
+      "Effect": "BasicEffect",
+      "DiffuseColor": [
+        0.8980393,
+        0.8980393,
+        0.8980393
+      ],
+      "EmissiveColor": [
+        0,
+        0,
+        0
+      ],
+      "SpecularColor": [
+        0,
+        0,
+        0
+      ],
+      "SpecularPower": 2,
+      "Alpha": 1,
+      "VertexColorEnabled": true,
+      "PreferPerPixelLighting": false,
+      "TextureEnabled": true,
+      "Texture": "/Models/World/Stage2/ship_handrail.png"
+    }
+  ],
+  "B_Base_Alpa01": [
+    {
+      "Effect": "BasicEffect",
+      "DiffuseColor": [
+        0.8980393,
+        0.8980393,
+        0.8980393
+      ],
+      "EmissiveColor": [
+        0,
+        0,
+        0
+      ],
+      "SpecularColor": [
+        0,
+        0,
+        0
+      ],
+      "SpecularPower": 2,
+      "Alpha": 1,
+      "VertexColorEnabled": true,
+      "PreferPerPixelLighting": false,
+      "TextureEnabled": true,
+      "Texture": "/Models/World/Stage2/ship_handrail.png"
+    }
+  ]
+}

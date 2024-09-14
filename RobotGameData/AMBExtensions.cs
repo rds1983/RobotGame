@@ -79,6 +79,6 @@ namespace RobotGameData
 		}
 
 		public static Texture2D LoadTexture2DPremultiply(this AssetManager assetManager, string assetName) =>
-			assetManager.LoadTexture2D(FrameworkCore.GraphicsDevice, assetName, true);
+			assetManager.LoadTexture2D(FrameworkCore.GraphicsDevice, assetName, true, Color.Magenta);
 	}
 }

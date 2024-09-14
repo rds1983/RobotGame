@@ -1,0 +1,52 @@
+{
+  "1_Col": [
+    {
+      "Effect": "BasicEffect",
+      "DiffuseColor": [
+        0.3019608,
+        0.3019608,
+        0.3019608
+      ],
+      "EmissiveColor": [
+        0,
+        0,
+        0
+      ],
+      "SpecularColor": [
+        0,
+        0,
+        0
+      ],
+      "SpecularPower": 1.9999999,
+      "Alpha": 1,
+      "VertexColorEnabled": false,
+      "PreferPerPixelLighting": false,
+      "TextureEnabled": false
+    }
+  ],
+  "4_Col": [
+    {
+      "Effect": "BasicEffect",
+      "DiffuseColor": [
+        0.3019608,
+        0.3019608,
+        0.3019608
+      ],
+      "EmissiveColor": [
+        0,
+        0,
+        0
+      ],
+      "SpecularColor": [
+        0,
+        0,
+        0
+      ],
+      "SpecularPower": 1.9999999,
+      "Alpha": 1,
+      "VertexColorEnabled": false,
+      "PreferPerPixelLighting": false,
+      "TextureEnabled": false
+    }
+  ]
+}

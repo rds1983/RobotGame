@@ -75,7 +75,6 @@ namespace RobotGameData
 		private readonly List<ModelMesh> _meshes = new List<ModelMesh>();
 		private Model _model;
 		private readonly List<ModelBone> _allNodes = new List<ModelBone>();
-		private readonly List<Vector3> _allPositions = new List<Vector3>();
 		private readonly Dictionary<int, ModelBoneCollection> _skinCache = new Dictionary<int, ModelBoneCollection>();
 		private readonly Dictionary<string, Effect[]> _materials = new Dictionary<string, Effect[]>();
 
@@ -461,7 +460,6 @@ namespace RobotGameData
 				modelMesh.SetBoundingSphere(sphere);
 
 				_meshes.Add(modelMesh);
-				_allPositions.AddRange(positions);
 			}
 		}
 
@@ -632,19 +630,42 @@ namespace RobotGameData
 				}
 			}
 
-			var bs = BoundingSphere.CreateFromPoints(_allPositions);
-			_allPositions.Clear();
-			_allPositions.Add(Vector3.Zero);
-			_allPositions.Add(Vector3.Zero);
-			_allPositions.Add(Vector3.Zero);
-
-			var tagData = new Dictionary<string, object>
+			var totalVertices = 0;
+			foreach(var mesh in _meshes)
 			{
-				["Vertices"] = _allPositions.ToArray(),
-				["BoundingSphere"] = bs
-			};
+				foreach(var part in mesh.MeshParts)
+				{
+					totalVertices += part.VertexBuffer.VertexCount;
+				}
+			}
 
-			_model.Tag = tagData;
+			var collideFile = Path.ChangeExtension(assetName, "collide");
+			if (_assetManager.Exists(collideFile))
+			{
+				var fileData = _assetManager.ReadAsString(collideFile);
+				var tagData = JsonSerializer.Deserialize<Dictionary<string, JsonElement>>(fileData);
+
+				var vertices = new List<Vector3>();
+				for(var i = 0; i < tagData["Vertices"].GetArrayLength(); ++i)
+				{
+					var ve = tagData["Vertices"][i];
+					var v = new Vector3(ve[0].GetSingle(), ve[1].GetSingle(), ve[2].GetSingle());
+					vertices.Add(v);
+				}
+
+				var vs = tagData["BoundingSphere"];
+				var boundingSphere = new BoundingSphere(
+					new Vector3(vs[0].GetSingle(), vs[1].GetSingle(), vs[2].GetSingle()),
+					vs[3].GetSingle());
+
+				var tagData2 = new Dictionary<string, object>
+				{
+					["Vertices"] = vertices.ToArray(),
+					["BoundingSphere"] = boundingSphere
+				};
+
+				_model.Tag = tagData2;
+			}
 
 			return _model;
 		}
