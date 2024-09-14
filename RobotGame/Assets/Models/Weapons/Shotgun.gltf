@@ -1,0 +1,466 @@
+{
+    "asset": {
+        "version": "2.0",
+        "generator": "Open Asset Import Library (assimp v5.2.0)"
+    },
+    "extensionsUsed": [
+        "KHR_materials_pbrSpecularGlossiness",
+        "FB_ngon_encoding"
+    ],
+    "accessors": [
+        {
+            "bufferView": 0,
+            "byteOffset": 0,
+            "componentType": 5126,
+            "count": 99,
+            "type": "VEC3",
+            "max": [
+                0.12743285298347474,
+                0.4078296422958374,
+                0.1396104395389557
+            ],
+            "min": [
+                -0.12743285298347474,
+                -0.4078297019004822,
+                -0.1396104395389557
+            ]
+        },
+        {
+            "bufferView": 1,
+            "byteOffset": 0,
+            "componentType": 5126,
+            "count": 99,
+            "type": "VEC3",
+            "max": [
+                1.0,
+                1.0,
+                1.0
+            ],
+            "min": [
+                -1.0,
+                -1.0,
+                -1.0
+            ]
+        },
+        {
+            "bufferView": 2,
+            "byteOffset": 0,
+            "componentType": 5126,
+            "count": 99,
+            "type": "VEC2",
+            "max": [
+                0.9667813777923584,
+                0.6993520259857178
+            ],
+            "min": [
+                0.4163479208946228,
+                0.033902645111083987
+            ]
+        },
+        {
+            "bufferView": 3,
+            "byteOffset": 0,
+            "componentType": 5125,
+            "count": 180,
+            "type": "SCALAR",
+            "max": [
+                98
+            ],
+            "min": [
+                0
+            ]
+        },
+        {
+            "bufferView": 4,
+            "byteOffset": 0,
+            "componentType": 5126,
+            "count": 131,
+            "type": "VEC3",
+            "max": [
+                0.06430646032094956,
+                1.796528935432434,
+                0.4806191921234131
+            ],
+            "min": [
+                -0.06608124822378159,
+                -0.32164931297302248,
+                -0.11513981968164444
+            ]
+        },
+        {
+            "bufferView": 5,
+            "byteOffset": 0,
+            "componentType": 5126,
+            "count": 131,
+            "type": "VEC3",
+            "max": [
+                1.0,
+                1.0,
+                1.0
+            ],
+            "min": [
+                -1.0,
+                -1.0,
+                -1.0
+            ]
+        },
+        {
+            "bufferView": 6,
+            "byteOffset": 0,
+            "componentType": 5126,
+            "count": 131,
+            "type": "VEC2",
+            "max": [
+                0.9762824177742004,
+                0.9890134930610657
+            ],
+            "min": [
+                0.005634034052491188,
+                0.006323695182800293
+            ]
+        },
+        {
+            "bufferView": 7,
+            "byteOffset": 0,
+            "componentType": 5125,
+            "count": 225,
+            "type": "SCALAR",
+            "max": [
+                130
+            ],
+            "min": [
+                0
+            ]
+        }
+    ],
+    "buffers": [
+        {
+            "byteLength": 8980,
+            "uri": "Shotgun.bin"
+        }
+    ],
+    "bufferViews": [
+        {
+            "buffer": 0,
+            "byteOffset": 0,
+            "byteLength": 1188,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteOffset": 1188,
+            "byteLength": 1188,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteOffset": 2376,
+            "byteLength": 792,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteOffset": 3168,
+            "byteLength": 720,
+            "target": 34963
+        },
+        {
+            "buffer": 0,
+            "byteOffset": 3888,
+            "byteLength": 1572,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteOffset": 5460,
+            "byteLength": 1572,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteOffset": 7032,
+            "byteLength": 1048,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteOffset": 8080,
+            "byteLength": 900,
+            "target": 34963
+        }
+    ],
+    "images": [
+        {
+            "uri": "shotgun.dds"
+        }
+    ],
+    "materials": [
+        {
+            "name": "shotgun",
+            "pbrMetallicRoughness": {
+                "baseColorTexture": {
+                    "index": 0
+                },
+                "baseColorFactor": [
+                    0.5882353186607361,
+                    0.5882353186607361,
+                    0.5882353186607361,
+                    1.0
+                ],
+                "metallicFactor": 0.0,
+                "roughnessFactor": 0.8585786819458008
+            },
+            "extensions": {
+                "KHR_materials_pbrSpecularGlossiness": {
+                    "diffuseFactor": [
+                        0.5882353186607361,
+                        0.5882353186607361,
+                        0.5882353186607361,
+                        1.0
+                    ],
+                    "specularFactor": [
+                        0.8999999761581421,
+                        0.8999999761581421,
+                        0.8999999761581421
+                    ],
+                    "glossinessFactor": 0.14142131805419923,
+                    "diffuseTexture": {
+                        "index": 0
+                    }
+                }
+            }
+        }
+    ],
+    "meshes": [
+        {
+            "name": "shotgun02",
+            "primitives": [
+                {
+                    "mode": 4,
+                    "material": 0,
+                    "indices": 3,
+                    "attributes": {
+                        "POSITION": 0,
+                        "NORMAL": 1,
+                        "TEXCOORD_0": 2
+                    }
+                }
+            ]
+        },
+        {
+            "name": "shotgun01",
+            "primitives": [
+                {
+                    "mode": 4,
+                    "material": 0,
+                    "indices": 7,
+                    "attributes": {
+                        "POSITION": 4,
+                        "NORMAL": 5,
+                        "TEXCOORD_0": 6
+                    }
+                }
+            ]
+        }
+    ],
+    "nodes": [
+        {
+            "name": "RootNode",
+            "children": [
+                1
+            ]
+        },
+        {
+            "name": "WeaponPointDummy_$AssimpFbx$_PreRotation",
+            "matrix": [
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                -4.371138828673793e-8,
+                -1.0,
+                0.0,
+                0.0,
+                1.0,
+                -4.371138828673793e-8,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "children": [
+                2
+            ]
+        },
+        {
+            "name": "WeaponPointDummy",
+            "children": [
+                3,
+                8,
+                9
+            ]
+        },
+        {
+            "name": "AnimDummy_$AssimpFbx$_Translation",
+            "matrix": [
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                -4.91020095694239e-8,
+                0.6798083186149597,
+                0.05620051920413971,
+                1.0
+            ],
+            "children": [
+                4
+            ]
+        },
+        {
+            "name": "AnimDummy_$AssimpFbx$_GeometricScaling",
+            "matrix": [
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                5.401735305786133,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "children": [
+                5
+            ]
+        },
+        {
+            "name": "AnimDummy",
+            "children": [
+                6
+            ]
+        },
+        {
+            "name": "AnimDummy_$AssimpFbx$_GeometricScalingInverse",
+            "matrix": [
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.1851256936788559,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "children": [
+                7
+            ]
+        },
+        {
+            "name": "shotgun02",
+            "matrix": [
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.00008041944965953007,
+                0.050930917263031009,
+                0.12153354287147522,
+                1.0
+            ],
+            "mesh": 0
+        },
+        {
+            "name": "shotgun01",
+            "matrix": [
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                2.743826055251475e-9,
+                0.0,
+                -0.0465075820684433,
+                1.0
+            ],
+            "mesh": 1
+        },
+        {
+            "name": "GunDummy",
+            "matrix": [
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                -2.944027244211611e-10,
+                1.796396255493164,
+                0.3403092622756958,
+                1.0
+            ]
+        }
+    ],
+    "samplers": [
+        {}
+    ],
+    "scenes": [
+        {
+            "nodes": [
+                0
+            ]
+        }
+    ],
+    "textures": [
+        {
+            "source": 0,
+            "sampler": 0
+        }
+    ],
+    "scene": 0
+}

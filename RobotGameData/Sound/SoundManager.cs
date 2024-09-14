@@ -10,10 +10,8 @@
 #region Using Statements
 using System;
 using System.Collections.Generic;
-using System.Text;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Audio;
-using RobotGameData.Camera;
 #endregion
 
 namespace RobotGameData.Sound

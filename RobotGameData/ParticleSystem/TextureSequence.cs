@@ -11,10 +11,10 @@
 using System;
 using System.Collections.Generic;
 using System.IO;
+using AssetManagementBase;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using RobotGameData.Helper;
-using RobotGameData.Resource;
 #endregion
 
 namespace RobotGameData.ParticleSystem
@@ -111,11 +111,10 @@ namespace RobotGameData.ParticleSystem
 		{
 			string resourceFullPath = Path.Combine(resourcePath, TextureFileName);
 
-			GameResourceTexture2D resource =
-							FrameworkCore.ResourceManager.LoadTexture(resourceFullPath);
+			var texture = FrameworkCore.AssetManager.LoadTexture2DPremultiply(resourceFullPath);
 
 			//  Set to texture
-			SetTexture(resource.Texture2D);
+			SetTexture(texture);
 		}
 
 		/// <summary>

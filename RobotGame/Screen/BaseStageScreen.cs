@@ -15,7 +15,6 @@ using Microsoft.Xna.Framework.Audio;
 using Microsoft.Xna.Framework.Input;
 using RobotGameData;
 using RobotGameData.Screen;
-using RobotGameData.Resource;
 using RobotGameData.Input;
 using RobotGameData.GameObject;
 using RobotGameData.Camera;
@@ -23,6 +22,8 @@ using RobotGameData.Collision;
 using RobotGameData.Render;
 using RobotGameData.Text;
 using RobotGameData.ParticleSystem;
+using FontStashSharp;
+using AssetManagementBase;
 #endregion
 
 namespace RobotGame
@@ -105,7 +106,7 @@ namespace RobotGame
 		protected GameSprite2D spriteHudAiming = null;
 		protected GameSprite2D spriteHudState = null;
 
-		protected SpriteFont fontHud = null;
+		protected SpriteFontBase fontHud = null;
 		protected GameText[] textHudCurrentAmmo = null;
 		protected GameText[] textHudRemainAmmo = null;
 		protected GameText[] textPickup = null;
@@ -271,7 +272,7 @@ namespace RobotGame
 			{
 				tracerBulletManager = new TracerBulletManager();
 				tracerBulletManager.AddBulletInstance(0, 32,
-					"Particles/Spark_Horizontal01",
+					"Particles/Spark_Horizontal01.png",
 					RobotGameGame.CurrentGameLevel.SceneParticleRoot);
 			}
 
@@ -407,26 +408,16 @@ namespace RobotGame
 		/// <param name="loadAllContent"></param>
 		public override void LoadContent()
 		{
-			this.fontHud = FrameworkCore.FontManager.CreateFont(
-												"Hud Font", "Font/RobotGame_font");
+			this.fontHud = Assets.FontSystem.GetFont(16);
 
 			//  Load a booster effect
-			GameResourceEffect loadedEffect =
-					FrameworkCore.ResourceManager.LoadEffect("Effects/BoosterEffect");
-
-			boosterEffect = loadedEffect.Effect;
+			boosterEffect = Assets.AssetManager.LoadEffect(GraphicsDevice, "Effects/BoosterEffect.efb");
 
 			//  Load a glow effect
-			loadedEffect =
-					FrameworkCore.ResourceManager.LoadEffect("Effects/PostScreen");
-
-			postScreenEffect = loadedEffect.Effect;
+			postScreenEffect = Assets.AssetManager.LoadEffect(GraphicsDevice, "Effects/PostScreen.efb");
 
 			// Load a gaussian blur effect
-			loadedEffect =
-					FrameworkCore.ResourceManager.LoadEffect("Effects/GaussianBlur");
-
-			gaussianBlurEffect = loadedEffect.Effect;
+			gaussianBlurEffect = Assets.AssetManager.LoadEffect(GraphicsDevice, "Effects/GaussianBlur.efb");
 
 			FrameworkCore.GameEventManager.Enable = false;
 
@@ -1066,7 +1057,7 @@ namespace RobotGame
 				int spriteCount = 0;
 
 				this.spriteHudAiming = new GameSprite2D();
-				this.spriteHudAiming.Create(2 * viewCount, "Textures/Hud_Aiming");
+				this.spriteHudAiming.Create(2 * viewCount, "Textures/Hud_Aiming.png");
 
 				this.refSceneHudRoot.AddChild(this.spriteHudAiming);
 
@@ -1092,7 +1083,7 @@ namespace RobotGame
 				int spriteCount = 0;
 
 				this.spriteHudState = new GameSprite2D();
-				this.spriteHudState.Create(8 * viewCount, "Textures/Hud1");
+				this.spriteHudState.Create(8 * viewCount, "Textures/Hud1.png");
 
 				this.refSceneHudRoot.AddChild(this.spriteHudState);
 
@@ -1197,7 +1188,7 @@ namespace RobotGame
 			//  Mission Result
 			{
 				this.spriteMission = new GameSprite2D();
-				this.spriteMission.Create(2, "Textures/Mission");
+				this.spriteMission.Create(2, "Textures/Mission.png");
 
 				this.refSceneMissionRoot.AddChild(this.spriteMission);
 

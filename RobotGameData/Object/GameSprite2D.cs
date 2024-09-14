@@ -13,8 +13,9 @@ using System.Collections.Generic;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using RobotGameData.Render;
-using RobotGameData.Resource;
 using RobotGameData.GameInterface;
+using AssetManagementBase;
+
 #endregion
 
 namespace RobotGameData.GameObject
@@ -266,10 +267,7 @@ namespace RobotGameData.GameObject
 			for (int i = 0; i < count; i++)
 				spriteList.Add(null);
 
-			GameResourceTexture2D resource =
-								FrameworkCore.ResourceManager.LoadTexture(fileName);
-
-			texture2D = resource.Texture2D;
+			texture2D = FrameworkCore.AssetManager.LoadTexture2DPremultiply(fileName);
 		}
 
 		/// <summary>

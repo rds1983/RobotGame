@@ -13,8 +13,8 @@ using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using RobotGameData;
 using RobotGameData.GameObject;
-using RobotGameData.Resource;
 using RobotGameData.GameInterface;
+using AssetManagementBase;
 #endregion
 
 namespace RobotGame
@@ -144,7 +144,7 @@ namespace RobotGame
 		int id = -1;
 		BulletObject[] bullets = null;
 
-		GameResourceTexture2D textureResource = null;
+		Texture2D textureResource = null;
 		GameBillboard tracerBulletBillboard = new GameBillboard();
 
 		#endregion
@@ -168,7 +168,7 @@ namespace RobotGame
 		{
 			this.id = id;
 
-			textureResource = FrameworkCore.ResourceManager.LoadTexture(textureFileName);
+			textureResource = Assets.AssetManager.LoadTexture2DPremultiply(textureFileName);
 
 			bullets = new BulletObject[instanceCount];
 
@@ -179,7 +179,7 @@ namespace RobotGame
 			}
 
 			tracerBulletBillboard = new GameBillboard();
-			tracerBulletBillboard.Create(instanceCount, textureResource.Texture2D,
+			tracerBulletBillboard.Create(instanceCount, textureResource,
 										RenderingSpace.World, false);
 
 			tracerBulletBillboard.SourceBlend = Blend.SourceAlpha;
@@ -199,7 +199,7 @@ namespace RobotGame
 		{
 			this.tracerBulletBillboard.RemoveFromParent();
 
-			FrameworkCore.ResourceManager.RemoveResourceByObject(textureResource, true);
+			// RemoveResourceByObject(textureResource, true);
 		}
 
 		/// <summary>

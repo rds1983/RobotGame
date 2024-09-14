@@ -14,8 +14,8 @@ using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using RobotGameData.Render;
 using RobotGameData.Helper;
-using RobotGameData.Resource;
 using RobotGameData.GameInterface;
+using AssetManagementBase;
 #endregion
 
 namespace RobotGameData.GameObject
@@ -259,10 +259,8 @@ namespace RobotGameData.GameObject
 							bool alwaysUpdate)
 		{
 			//  load a texture.
-			GameResourceTexture2D resource =
-								FrameworkCore.ResourceManager.LoadTexture(fileName);
-
-			Create(count, resource.Texture2D, renderingSpace, alwaysUpdate);
+			var texture = FrameworkCore.AssetManager.LoadTexture2DPremultiply(fileName);
+			Create(count, texture, renderingSpace, alwaysUpdate);
 		}
 
 		/// <summary>

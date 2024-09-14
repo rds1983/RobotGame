@@ -163,7 +163,7 @@ namespace RobotGameData.ParticleSystem
 			if (particleOn == false)
 				return;
 
-			Stream stream = File.OpenRead(Path.Combine("Content", fileName));
+			Stream stream = File.OpenRead(Path.Combine("Assets", fileName));
 
 			XmlTextReader reader = new XmlTextReader(stream);
 			XmlSerializer serializer = new XmlSerializer(typeof(ParticleReaderList));
@@ -205,9 +205,7 @@ namespace RobotGameData.ParticleSystem
 		/// <returns>particle information</returns>
 		public ParticleSequenceInfo LoadParticleSequenceInfo(string fileName)
 		{
-			ParticleSequenceInfo newData = (ParticleSequenceInfo)
-								FrameworkCore.ContentManager.Load<ParticleSequenceInfo>(
-										fileName);
+			var newData = FrameworkCore.AssetManager.LoadParticleSequenceInfo(fileName);
 
 			particleInfoList.Add(newData);
 

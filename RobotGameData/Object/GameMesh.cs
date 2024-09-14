@@ -8,10 +8,10 @@
 #endregion
 
 #region Using Statements
+using AssetManagementBase;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using RobotGameData.Render;
-using RobotGameData.Resource;
 #endregion
 
 namespace RobotGameData.GameObject
@@ -300,10 +300,8 @@ namespace RobotGameData.GameObject
 		public void Create(int vertexCount, int indexCount, string fileName)
 		{
 			//  Load texture
-			GameResourceTexture2D resource =
-							FrameworkCore.ResourceManager.LoadTexture(fileName);
-
-			Create(vertexCount, indexCount, resource.Texture2D);
+			var texture = FrameworkCore.AssetManager.LoadTexture2DPremultiply(fileName);
+			Create(vertexCount, indexCount, texture);
 		}
 
 		/// <summary>
@@ -491,7 +489,7 @@ namespace RobotGameData.GameObject
 		public void BindVertexBuffer()
 		{
 			//  Set vertex buffer
-			vertexBuffer.SetData<VertexPositionColorTexture>(vertexData);
+			vertexBuffer.SetData(vertexData);
 		}
 
 		/// <summary>

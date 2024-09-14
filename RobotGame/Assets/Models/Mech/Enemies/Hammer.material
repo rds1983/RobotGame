@@ -1,0 +1,418 @@
+{
+  "Object06": [
+    {
+      "Effect": "BasicEffect",
+      "DiffuseColor": [
+        0.588,
+        0.588,
+        0.588
+      ],
+      "EmissiveColor": [
+        0,
+        0,
+        0
+      ],
+      "SpecularColor": [
+        0,
+        0,
+        0
+      ],
+      "SpecularPower": 2,
+      "Alpha": 1,
+      "VertexColorEnabled": true,
+      "PreferPerPixelLighting": false,
+      "TextureEnabled": true,
+      "Texture": "/Models/Mech/Enemies/texture_Hammer.dds"
+    }
+  ],
+  "Object05": [
+    {
+      "Effect": "BasicEffect",
+      "DiffuseColor": [
+        0.588,
+        0.588,
+        0.588
+      ],
+      "EmissiveColor": [
+        0,
+        0,
+        0
+      ],
+      "SpecularColor": [
+        0,
+        0,
+        0
+      ],
+      "SpecularPower": 2,
+      "Alpha": 1,
+      "VertexColorEnabled": true,
+      "PreferPerPixelLighting": false,
+      "TextureEnabled": true,
+      "Texture": "/Models/Mech/Enemies/texture_Hammer.dds"
+    }
+  ],
+  "Object15": [
+    {
+      "Effect": "BasicEffect",
+      "DiffuseColor": [
+        0.588,
+        0.588,
+        0.588
+      ],
+      "EmissiveColor": [
+        0,
+        0,
+        0
+      ],
+      "SpecularColor": [
+        0,
+        0,
+        0
+      ],
+      "SpecularPower": 2,
+      "Alpha": 1,
+      "VertexColorEnabled": true,
+      "PreferPerPixelLighting": false,
+      "TextureEnabled": true,
+      "Texture": "/Models/Mech/Enemies/texture_Hammer_Add.dds"
+    }
+  ],
+  "Object11": [
+    {
+      "Effect": "BasicEffect",
+      "DiffuseColor": [
+        0.588,
+        0.588,
+        0.588
+      ],
+      "EmissiveColor": [
+        0,
+        0,
+        0
+      ],
+      "SpecularColor": [
+        0,
+        0,
+        0
+      ],
+      "SpecularPower": 2,
+      "Alpha": 1,
+      "VertexColorEnabled": true,
+      "PreferPerPixelLighting": false,
+      "TextureEnabled": true,
+      "Texture": "/Models/Mech/Enemies/texture_Hammer.dds"
+    }
+  ],
+  "Object10": [
+    {
+      "Effect": "BasicEffect",
+      "DiffuseColor": [
+        0.588,
+        0.588,
+        0.588
+      ],
+      "EmissiveColor": [
+        0,
+        0,
+        0
+      ],
+      "SpecularColor": [
+        0,
+        0,
+        0
+      ],
+      "SpecularPower": 2,
+      "Alpha": 1,
+      "VertexColorEnabled": true,
+      "PreferPerPixelLighting": false,
+      "TextureEnabled": true,
+      "Texture": "/Models/Mech/Enemies/texture_Hammer.dds"
+    }
+  ],
+  "Object02": [
+    {
+      "Effect": "BasicEffect",
+      "DiffuseColor": [
+        0.588,
+        0.588,
+        0.588
+      ],
+      "EmissiveColor": [
+        0,
+        0,
+        0
+      ],
+      "SpecularColor": [
+        0,
+        0,
+        0
+      ],
+      "SpecularPower": 2,
+      "Alpha": 1,
+      "VertexColorEnabled": true,
+      "PreferPerPixelLighting": false,
+      "TextureEnabled": true,
+      "Texture": "/Models/Mech/Enemies/texture_Hammer_Add.dds"
+    }
+  ],
+  "Object01": [
+    {
+      "Effect": "BasicEffect",
+      "DiffuseColor": [
+        0.588,
+        0.588,
+        0.588
+      ],
+      "EmissiveColor": [
+        0,
+        0,
+        0
+      ],
+      "SpecularColor": [
+        0,
+        0,
+        0
+      ],
+      "SpecularPower": 2,
+      "Alpha": 1,
+      "VertexColorEnabled": true,
+      "PreferPerPixelLighting": false,
+      "TextureEnabled": true,
+      "Texture": "/Models/Mech/Enemies/texture_Hammer.dds"
+    }
+  ],
+  "Box01": [
+    {
+      "Effect": "BasicEffect",
+      "DiffuseColor": [
+        0.588,
+        0.588,
+        0.588
+      ],
+      "EmissiveColor": [
+        0,
+        0,
+        0
+      ],
+      "SpecularColor": [
+        0,
+        0,
+        0
+      ],
+      "SpecularPower": 2,
+      "Alpha": 1,
+      "VertexColorEnabled": true,
+      "PreferPerPixelLighting": false,
+      "TextureEnabled": true,
+      "Texture": "/Models/Mech/Enemies/texture_Hammer_Add.dds"
+    }
+  ],
+  "Object04": [
+    {
+      "Effect": "BasicEffect",
+      "DiffuseColor": [
+        0.588,
+        0.588,
+        0.588
+      ],
+      "EmissiveColor": [
+        0,
+        0,
+        0
+      ],
+      "SpecularColor": [
+        0,
+        0,
+        0
+      ],
+      "SpecularPower": 2,
+      "Alpha": 1,
+      "VertexColorEnabled": true,
+      "PreferPerPixelLighting": false,
+      "TextureEnabled": true,
+      "Texture": "/Models/Mech/Enemies/texture_Hammer.dds"
+    }
+  ],
+  "Object09": [
+    {
+      "Effect": "BasicEffect",
+      "DiffuseColor": [
+        0.588,
+        0.588,
+        0.588
+      ],
+      "EmissiveColor": [
+        0,
+        0,
+        0
+      ],
+      "SpecularColor": [
+        0,
+        0,
+        0
+      ],
+      "SpecularPower": 2,
+      "Alpha": 1,
+      "VertexColorEnabled": true,
+      "PreferPerPixelLighting": false,
+      "TextureEnabled": true,
+      "Texture": "/Models/Mech/Enemies/texture_Hammer.dds"
+    }
+  ],
+  "Object08": [
+    {
+      "Effect": "BasicEffect",
+      "DiffuseColor": [
+        0.588,
+        0.588,
+        0.588
+      ],
+      "EmissiveColor": [
+        0,
+        0,
+        0
+      ],
+      "SpecularColor": [
+        0,
+        0,
+        0
+      ],
+      "SpecularPower": 2,
+      "Alpha": 1,
+      "VertexColorEnabled": true,
+      "PreferPerPixelLighting": false,
+      "TextureEnabled": true,
+      "Texture": "/Models/Mech/Enemies/texture_Hammer.dds"
+    }
+  ],
+  "Object07": [
+    {
+      "Effect": "BasicEffect",
+      "DiffuseColor": [
+        0.588,
+        0.588,
+        0.588
+      ],
+      "EmissiveColor": [
+        0,
+        0,
+        0
+      ],
+      "SpecularColor": [
+        0,
+        0,
+        0
+      ],
+      "SpecularPower": 2,
+      "Alpha": 1,
+      "VertexColorEnabled": true,
+      "PreferPerPixelLighting": false,
+      "TextureEnabled": true,
+      "Texture": "/Models/Mech/Enemies/texture_Hammer.dds"
+    }
+  ],
+  "Object14": [
+    {
+      "Effect": "BasicEffect",
+      "DiffuseColor": [
+        0.588,
+        0.588,
+        0.588
+      ],
+      "EmissiveColor": [
+        0,
+        0,
+        0
+      ],
+      "SpecularColor": [
+        0,
+        0,
+        0
+      ],
+      "SpecularPower": 2,
+      "Alpha": 1,
+      "VertexColorEnabled": true,
+      "PreferPerPixelLighting": false,
+      "TextureEnabled": true,
+      "Texture": "/Models/Mech/Enemies/texture_Hammer.dds"
+    }
+  ],
+  "Object13": [
+    {
+      "Effect": "BasicEffect",
+      "DiffuseColor": [
+        0.588,
+        0.588,
+        0.588
+      ],
+      "EmissiveColor": [
+        0,
+        0,
+        0
+      ],
+      "SpecularColor": [
+        0,
+        0,
+        0
+      ],
+      "SpecularPower": 2,
+      "Alpha": 1,
+      "VertexColorEnabled": true,
+      "PreferPerPixelLighting": false,
+      "TextureEnabled": true,
+      "Texture": "/Models/Mech/Enemies/texture_Hammer.dds"
+    }
+  ],
+  "Object12": [
+    {
+      "Effect": "BasicEffect",
+      "DiffuseColor": [
+        0.588,
+        0.588,
+        0.588
+      ],
+      "EmissiveColor": [
+        0,
+        0,
+        0
+      ],
+      "SpecularColor": [
+        0,
+        0,
+        0
+      ],
+      "SpecularPower": 2,
+      "Alpha": 1,
+      "VertexColorEnabled": true,
+      "PreferPerPixelLighting": false,
+      "TextureEnabled": true,
+      "Texture": "/Models/Mech/Enemies/texture_Hammer.dds"
+    }
+  ],
+  "Object03": [
+    {
+      "Effect": "BasicEffect",
+      "DiffuseColor": [
+        0.588,
+        0.588,
+        0.588
+      ],
+      "EmissiveColor": [
+        0,
+        0,
+        0
+      ],
+      "SpecularColor": [
+        0,
+        0,
+        0
+      ],
+      "SpecularPower": 2,
+      "Alpha": 1,
+      "VertexColorEnabled": true,
+      "PreferPerPixelLighting": false,
+      "TextureEnabled": true,
+      "Texture": "/Models/Mech/Enemies/texture_Hammer.dds"
+    }
+  ]
+}

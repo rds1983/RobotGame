@@ -9,8 +9,8 @@
 
 #region Using Statements
 using Microsoft.Xna.Framework;
+using Microsoft.Xna.Framework.Graphics;
 using RobotGameData.Render;
-using RobotGameData.Resource;
 #endregion
 
 namespace RobotGameData.GameObject
@@ -41,7 +41,7 @@ namespace RobotGameData.GameObject
 		/// Constructor.
 		/// </summary>
 		/// <param name="resource">model resource</param>
-		public GameSkybox(GameResourceModel resource)
+		public GameSkybox(Model resource)
 			: base(resource) { }
 
 		/// <summary>

@@ -1,0 +1,28 @@
+{
+  "Sky": [
+    {
+      "Effect": "BasicEffect",
+      "DiffuseColor": [
+        0.5880001,
+        0.5880001,
+        0.5880001
+      ],
+      "EmissiveColor": [
+        0,
+        0,
+        0
+      ],
+      "SpecularColor": [
+        0,
+        0,
+        0
+      ],
+      "SpecularPower": 1.9999999,
+      "Alpha": 1,
+      "VertexColorEnabled": false,
+      "PreferPerPixelLighting": false,
+      "TextureEnabled": true,
+      "Texture": "/Models/World/Stage1/France_2_sky.jpg"
+    }
+  ]
+}

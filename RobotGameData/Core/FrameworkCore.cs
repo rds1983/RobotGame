@@ -15,14 +15,14 @@ using Microsoft.Xna.Framework.Graphics;
 using RobotGameData.Helper;
 using RobotGameData.Render;
 using RobotGameData.Input;
-using RobotGameData.Font;
 using RobotGameData.Text;
 using RobotGameData.Collision;
-using RobotGameData.Resource;
 using RobotGameData.Screen;
 using RobotGameData.Sound;
 using RobotGameData.ParticleSystem;
 using RobotGameData.GameEvent;
+using FontStashSharp;
+using AssetManagementBase;
 #endregion
 
 
@@ -66,13 +66,11 @@ namespace RobotGameData
 		static GraphicsDeviceManager graphicsDeviceManager = null;
 		static Viewer viewer = null;
 		static InputComponentManager inputManager = null;
-		static ResourceManager resourceManager = null;
 		static ParticleManager particleManager = null;
 		static CollisionContext collisionContext = null;
 		static SoundManager soundManager = null;
-		static FontManager fontManager = null;
 		static TextManager textManager = null;
-		static SpriteFont debugFont = null;
+		static SpriteFontBase debugFont = null;
 		static GameScreenManager screenManager = null;
 		static GameEventManager gameEventManager = null;
 
@@ -90,6 +88,8 @@ namespace RobotGameData
 			get { return game; }
 		}
 
+		public static new GraphicsDevice GraphicsDevice => Game.GraphicsDevice;
+
 		public static FpsCounter FpsCounter
 		{
 			get { return fpsCounter; }
@@ -105,11 +105,6 @@ namespace RobotGameData
 			get { return inputManager; }
 		}
 
-		public static ResourceManager ResourceManager
-		{
-			get { return resourceManager; }
-		}
-
 		public static RenderContext RenderContext
 		{
 			get { return Viewer.RenderContext; }
@@ -120,11 +115,6 @@ namespace RobotGameData
 			get { return particleManager; }
 		}
 
-		public static ContentManager ContentManager
-		{
-			get { return ResourceManager.ContentManager; }
-		}
-
 		public static SoundManager SoundManager
 		{
 			get { return soundManager; }
@@ -133,11 +123,6 @@ namespace RobotGameData
 		public static CollisionContext CollisionContext
 		{
 			get { return collisionContext; }
-		}
-
-		public static FontManager FontManager
-		{
-			get { return fontManager; }
 		}
 
 		public static TextManager TextManager
@@ -155,7 +140,7 @@ namespace RobotGameData
 			get { return Viewer.CurrentCamera; }
 		}
 
-		public static SpriteFont DebugFont
+		public static SpriteFontBase DebugFont
 		{
 			get { return debugFont; }
 		}
@@ -174,6 +159,8 @@ namespace RobotGameData
 		{
 			get { return gameEventManager; }
 		}
+
+		public static AssetManager AssetManager { get; set; }
 
 		public static GameScreen CurrentScreen
 		{
@@ -249,10 +236,8 @@ namespace RobotGameData
 			graphicsDeviceManager.PreparingDeviceSettings += new EventHandler<PreparingDeviceSettingsEventArgs>(graphicsDeviceManager_PreparingDeviceSettings);
 			viewer = new Viewer(this);
 			inputManager = new InputComponentManager();
-			fontManager = new FontManager();
 			screenManager = new GameScreenManager(this);
 			textManager = new TextManager(this);
-			resourceManager = new ResourceManager(this, "Content");
 			particleManager = new ParticleManager();
 			collisionContext = new CollisionContext();
 			soundManager = new SoundManager();
@@ -281,7 +266,7 @@ namespace RobotGameData
 		protected override void Initialize()
 		{
 			//  Creates debug font
-			debugFont = FontManager.CreateFont("DebugFont", "Font/SmallArial");
+			debugFont = Resources.DefaultFontSystem.GetFont(12);
 
 			//  Initialize input manager
 			InputManager.Initialize();
@@ -378,12 +363,6 @@ namespace RobotGameData
 				textManager = null;
 			}
 
-			if (fontManager != null)
-			{
-				fontManager.Dispose();
-				fontManager = null;
-			}
-
 			inputManager = null;
 
 			if (collisionContext != null)
@@ -416,12 +395,6 @@ namespace RobotGameData
 				viewer = null;
 			}
 
-			if (resourceManager != null)
-			{
-				resourceManager.Dispose();
-				resourceManager = null;
-			}
-
 			if (debugFont != null)
 				debugFont = null;
 
@@ -431,12 +404,6 @@ namespace RobotGameData
 		protected override void UnloadContent()
 		{
 			base.UnloadContent();
-
-			if (resourceManager != null)
-			{
-				resourceManager.Dispose();
-				resourceManager = null;
-			}
 		}
 
 		/// <summary>

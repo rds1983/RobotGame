@@ -132,6 +132,7 @@ namespace RobotGameData.Collision
 						{
 							Intersection[i] = IntersectionType.UpperLeft;
 						}
+
 						//  inside upper right
 						else if (vertices[count + i].X > centerX &&
 								vertices[count + i].Z < centerZ)

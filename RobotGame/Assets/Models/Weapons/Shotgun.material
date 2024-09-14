@@ -1,0 +1,54 @@
+{
+  "shotgun02": [
+    {
+      "Effect": "BasicEffect",
+      "DiffuseColor": [
+        0.5882353,
+        0.5882353,
+        0.5882353
+      ],
+      "EmissiveColor": [
+        0,
+        0,
+        0
+      ],
+      "SpecularColor": [
+        0,
+        0,
+        0
+      ],
+      "SpecularPower": 1.9999999,
+      "Alpha": 1,
+      "VertexColorEnabled": false,
+      "PreferPerPixelLighting": false,
+      "TextureEnabled": true,
+      "Texture": "/Models/Weapons/shotgun.dds"
+    }
+  ],
+  "shotgun01": [
+    {
+      "Effect": "BasicEffect",
+      "DiffuseColor": [
+        0.5882353,
+        0.5882353,
+        0.5882353
+      ],
+      "EmissiveColor": [
+        0,
+        0,
+        0
+      ],
+      "SpecularColor": [
+        0,
+        0,
+        0
+      ],
+      "SpecularPower": 1.9999999,
+      "Alpha": 1,
+      "VertexColorEnabled": false,
+      "PreferPerPixelLighting": false,
+      "TextureEnabled": true,
+      "Texture": "/Models/Weapons/shotgun.dds"
+    }
+  ]
+}

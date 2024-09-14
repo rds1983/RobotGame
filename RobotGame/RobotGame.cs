@@ -84,9 +84,13 @@ namespace RobotGame
 			//  Initialize a graphics information
 			GraphicsInfo graphicsInfo = new GraphicsInfo();
 
+#if XBOX
+            graphicsInfo.screenWidth = (int)ViewerWidth.Width1080;
+            graphicsInfo.screenHeight = (int)ViewerHeight.Height1080;
+#else
 			graphicsInfo.screenWidth = (int)ViewerWidth.Width720;
 			graphicsInfo.screenHeight = (int)ViewerHeight.Height720;
-
+#endif
 			//  Set to shader info
 			//graphicsInfo.pixelShaderProfile = ShaderProfile.PS_2_0;
 			//graphicsInfo.vertexShaderProfile = ShaderProfile.VS_2_0;
@@ -103,6 +107,8 @@ namespace RobotGame
 		/// </summary>
 		protected override void Initialize()
 		{
+			FrameworkCore.AssetManager = Assets.AssetManager;
+
 			base.Initialize();
 
 			//  Initialize sound engine

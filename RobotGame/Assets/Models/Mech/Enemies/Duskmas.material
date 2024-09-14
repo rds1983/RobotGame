@@ -1,0 +1,236 @@
+{
+  "Object01": [
+    {
+      "Effect": "BasicEffect",
+      "DiffuseColor": [
+        0.5882353,
+        0.5882353,
+        0.5882353
+      ],
+      "EmissiveColor": [
+        0,
+        0,
+        0
+      ],
+      "SpecularColor": [
+        0,
+        0,
+        0
+      ],
+      "SpecularPower": 1.9999999,
+      "Alpha": 1,
+      "VertexColorEnabled": true,
+      "PreferPerPixelLighting": false,
+      "TextureEnabled": true,
+      "Texture": "/Models/Mech/Enemies/Duskmas.dds"
+    }
+  ],
+  "Object03": [
+    {
+      "Effect": "BasicEffect",
+      "DiffuseColor": [
+        0.5882353,
+        0.5882353,
+        0.5882353
+      ],
+      "EmissiveColor": [
+        0,
+        0,
+        0
+      ],
+      "SpecularColor": [
+        0,
+        0,
+        0
+      ],
+      "SpecularPower": 1.9999999,
+      "Alpha": 1,
+      "VertexColorEnabled": true,
+      "PreferPerPixelLighting": false,
+      "TextureEnabled": true,
+      "Texture": "/Models/Mech/Enemies/Duskmas.dds"
+    }
+  ],
+  "Object02": [
+    {
+      "Effect": "BasicEffect",
+      "DiffuseColor": [
+        0.5882353,
+        0.5882353,
+        0.5882353
+      ],
+      "EmissiveColor": [
+        0,
+        0,
+        0
+      ],
+      "SpecularColor": [
+        0,
+        0,
+        0
+      ],
+      "SpecularPower": 1.9999999,
+      "Alpha": 1,
+      "VertexColorEnabled": true,
+      "PreferPerPixelLighting": false,
+      "TextureEnabled": true,
+      "Texture": "/Models/Mech/Enemies/Duskmas.dds"
+    }
+  ],
+  "Object04": [
+    {
+      "Effect": "BasicEffect",
+      "DiffuseColor": [
+        0.5882353,
+        0.5882353,
+        0.5882353
+      ],
+      "EmissiveColor": [
+        0,
+        0,
+        0
+      ],
+      "SpecularColor": [
+        0,
+        0,
+        0
+      ],
+      "SpecularPower": 1.9999999,
+      "Alpha": 1,
+      "VertexColorEnabled": true,
+      "PreferPerPixelLighting": false,
+      "TextureEnabled": true,
+      "Texture": "/Models/Mech/Enemies/Duskmas.dds"
+    }
+  ],
+  "Object05": [
+    {
+      "Effect": "BasicEffect",
+      "DiffuseColor": [
+        0.5882353,
+        0.5882353,
+        0.5882353
+      ],
+      "EmissiveColor": [
+        0,
+        0,
+        0
+      ],
+      "SpecularColor": [
+        0,
+        0,
+        0
+      ],
+      "SpecularPower": 1.9999999,
+      "Alpha": 1,
+      "VertexColorEnabled": true,
+      "PreferPerPixelLighting": false,
+      "TextureEnabled": true,
+      "Texture": "/Models/Mech/Enemies/Duskmas.dds"
+    }
+  ],
+  "Object06": [
+    {
+      "Effect": "BasicEffect",
+      "DiffuseColor": [
+        0.5882353,
+        0.5882353,
+        0.5882353
+      ],
+      "EmissiveColor": [
+        0,
+        0,
+        0
+      ],
+      "SpecularColor": [
+        0,
+        0,
+        0
+      ],
+      "SpecularPower": 1.9999999,
+      "Alpha": 1,
+      "VertexColorEnabled": true,
+      "PreferPerPixelLighting": false,
+      "TextureEnabled": true,
+      "Texture": "/Models/Mech/Enemies/Duskmas.dds"
+    }
+  ],
+  "Object07": [
+    {
+      "Effect": "BasicEffect",
+      "DiffuseColor": [
+        0.5882353,
+        0.5882353,
+        0.5882353
+      ],
+      "EmissiveColor": [
+        0,
+        0,
+        0
+      ],
+      "SpecularColor": [
+        0,
+        0,
+        0
+      ],
+      "SpecularPower": 1.9999999,
+      "Alpha": 1,
+      "VertexColorEnabled": true,
+      "PreferPerPixelLighting": false,
+      "TextureEnabled": true,
+      "Texture": "/Models/Mech/Enemies/Duskmas.dds"
+    }
+  ],
+  "Object08": [
+    {
+      "Effect": "BasicEffect",
+      "DiffuseColor": [
+        0.5882353,
+        0.5882353,
+        0.5882353
+      ],
+      "EmissiveColor": [
+        0,
+        0,
+        0
+      ],
+      "SpecularColor": [
+        0,
+        0,
+        0
+      ],
+      "SpecularPower": 1.9999999,
+      "Alpha": 1,
+      "VertexColorEnabled": true,
+      "PreferPerPixelLighting": false,
+      "TextureEnabled": true,
+      "Texture": "/Models/Mech/Enemies/Duskmas.dds"
+    }
+  ],
+  "NPC4_02": [
+    {
+      "Effect": "BasicEffect",
+      "DiffuseColor": [
+        0.5882353,
+        0.5882353,
+        0.5882353
+      ],
+      "EmissiveColor": [
+        0,
+        0,
+        0
+      ],
+      "SpecularColor": [
+        0,
+        0,
+        0
+      ],
+      "SpecularPower": 1.9999999,
+      "Alpha": 1,
+      "VertexColorEnabled": true,
+      "PreferPerPixelLighting": false,
+      "TextureEnabled": true,
+      "Texture": "/Models/Mech/Enemies/Duskmas.dds"
+    }
+  ]
+}

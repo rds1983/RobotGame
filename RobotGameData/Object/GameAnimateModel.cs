@@ -13,7 +13,6 @@ using System.Collections.Generic;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using RobotGameData.Render;
-using RobotGameData.Resource;
 #endregion
 
 namespace RobotGameData.GameObject
@@ -48,7 +47,7 @@ namespace RobotGameData.GameObject
 		/// Constructor.
 		/// </summary>
 		/// <param name="resource">model resource</param>         
-		public GameAnimateModel(GameResourceModel resource)
+		public GameAnimateModel(Model resource)
 			: base(resource) { }
 
 		/// <summary>
@@ -159,10 +158,8 @@ namespace RobotGameData.GameObject
 		public int AddAnimation(string fileName)
 		{
 			//  Load and find an animation resource
-			GameResourceAnimation resource =
-								FrameworkCore.ResourceManager.LoadAnimation(fileName);
-
-			return AddAnimation(resource.Animation);
+			var animation = FrameworkCore.AssetManager.LoadAnimationSequence(fileName + ".Animation");
+			return AddAnimation(animation);
 		}
 
 		/// <summary>

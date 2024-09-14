@@ -170,13 +170,13 @@ namespace RobotGame
 		public override void LoadContent()
 		{
 			//  Load the title image
-			this.spriteBG.Create(1, "Textures/VS_Back");
+			this.spriteBG.Create(1, "Textures/VS_Back.jpg");
 
 			//  Load the select image
-			this.spriteSelect.Create(4, "Textures/VS_Select");
+			this.spriteSelect.Create(4, "Textures/VS_Select.png");
 
 			//  Load the select image
-			this.spriteTextImage.Create(3, "Textures/VS_Text");
+			this.spriteTextImage.Create(3, "Textures/VS_Text.png");
 		}
 
 

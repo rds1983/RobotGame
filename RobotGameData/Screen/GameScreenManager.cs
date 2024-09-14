@@ -8,13 +8,13 @@
 #endregion
 
 #region Using Statements
-using System;
 using System.Diagnostics;
 using System.Collections.Generic;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Content;
 using Microsoft.Xna.Framework.Graphics;
 using RobotGameData.GameObject;
+using AssetManagementBase;
 #endregion
 
 namespace RobotGameData.Screen
@@ -59,9 +59,9 @@ namespace RobotGameData.Screen
 		/// screens. This is never unloaded, so if a screen requires a large amount
 		/// of temporary data, it should create a local content manager instead.
 		/// </summary>
-		public static ContentManager Content
+		public static AssetManager Content
 		{
-			get { return FrameworkCore.ContentManager; }
+			get { return FrameworkCore.AssetManager; }
 		}
 
 		/// <summary>
@@ -135,7 +135,7 @@ namespace RobotGameData.Screen
 		protected override void LoadContent()
 		{
 			// Load content belonging to the screen manager.
-			fadeSprite.Create(1, "blank");
+			fadeSprite.Create(1, "blank.png");
 
 			fadeObject = fadeSprite.AddSprite(0, "Screen fade");
 

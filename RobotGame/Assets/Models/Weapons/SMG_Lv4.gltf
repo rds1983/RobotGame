@@ -1,0 +1,272 @@
+{
+    "asset": {
+        "version": "2.0",
+        "generator": "Open Asset Import Library (assimp v5.2.0)"
+    },
+    "extensionsUsed": [
+        "KHR_materials_pbrSpecularGlossiness",
+        "FB_ngon_encoding"
+    ],
+    "accessors": [
+        {
+            "bufferView": 0,
+            "byteOffset": 0,
+            "componentType": 5126,
+            "count": 266,
+            "type": "VEC3",
+            "max": [
+                0.08768808841705322,
+                1.7159510850906373,
+                0.7377166748046875
+            ],
+            "min": [
+                -0.08916497230529785,
+                -0.7433030605316162,
+                -0.4780489206314087
+            ]
+        },
+        {
+            "bufferView": 1,
+            "byteOffset": 0,
+            "componentType": 5126,
+            "count": 266,
+            "type": "VEC3",
+            "max": [
+                1.0,
+                1.0,
+                1.0
+            ],
+            "min": [
+                -1.0,
+                -1.0,
+                -1.0
+            ]
+        },
+        {
+            "bufferView": 2,
+            "byteOffset": 0,
+            "componentType": 5126,
+            "count": 266,
+            "type": "VEC2",
+            "max": [
+                0.9968242049217224,
+                0.9933844208717346
+            ],
+            "min": [
+                0.0038615448866039516,
+                0.006597340106964111
+            ]
+        },
+        {
+            "bufferView": 3,
+            "byteOffset": 0,
+            "componentType": 5126,
+            "count": 266,
+            "type": "VEC2",
+            "max": [
+                0.9968242049217224,
+                0.9933844208717346
+            ],
+            "min": [
+                0.0038615448866039516,
+                0.006597340106964111
+            ]
+        },
+        {
+            "bufferView": 4,
+            "byteOffset": 0,
+            "componentType": 5126,
+            "count": 266,
+            "type": "VEC2",
+            "max": [
+                0.9968242049217224,
+                0.9933844208717346
+            ],
+            "min": [
+                0.0038615448866039516,
+                0.006597340106964111
+            ]
+        },
+        {
+            "bufferView": 5,
+            "byteOffset": 0,
+            "componentType": 5125,
+            "count": 498,
+            "type": "SCALAR",
+            "max": [
+                265
+            ],
+            "min": [
+                0
+            ]
+        }
+    ],
+    "buffers": [
+        {
+            "byteLength": 14760,
+            "uri": "SMG_Lv4_0.bin"
+        }
+    ],
+    "bufferViews": [
+        {
+            "buffer": 0,
+            "byteOffset": 0,
+            "byteLength": 3192,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteOffset": 3192,
+            "byteLength": 3192,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteOffset": 6384,
+            "byteLength": 2128,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteOffset": 8512,
+            "byteLength": 2128,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteOffset": 10640,
+            "byteLength": 2128,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteOffset": 12768,
+            "byteLength": 1992,
+            "target": 34963
+        }
+    ],
+    "images": [
+        {
+            "uri": "SMG_Lv4.dds"
+        }
+    ],
+    "materials": [
+        {
+            "name": "SMG_Lv5",
+            "pbrMetallicRoughness": {
+                "baseColorTexture": {
+                    "index": 0
+                },
+                "metallicFactor": 0.0,
+                "roughnessFactor": 0.2789996862411499
+            },
+            "extensions": {
+                "KHR_materials_pbrSpecularGlossiness": {
+                    "specularFactor": [
+                        0.5,
+                        0.5,
+                        0.5
+                    ],
+                    "glossinessFactor": 0.7210003137588501,
+                    "diffuseTexture": {
+                        "index": 0
+                    }
+                }
+            }
+        }
+    ],
+    "meshes": [
+        {
+            "name": "SMG_Lv4",
+            "primitives": [
+                {
+                    "mode": 4,
+                    "material": 0,
+                    "indices": 5,
+                    "attributes": {
+                        "POSITION": 0,
+                        "NORMAL": 1,
+                        "TEXCOORD_0": 2,
+                        "TEXCOORD_1": 3,
+                        "TEXCOORD_2": 4
+                    }
+                }
+            ]
+        }
+    ],
+    "nodes": [
+        {
+            "name": "RootNode",
+            "children": [
+                1
+            ]
+        },
+        {
+            "name": "WeaponPointDummy",
+            "matrix": [
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                -4.371138828673793e-8,
+                -1.0,
+                0.0,
+                0.0,
+                1.0,
+                -4.371138828673793e-8,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "children": [
+                2,
+                3
+            ]
+        },
+        {
+            "name": "GunDummy",
+            "matrix": [
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                -3.809472737259512e-9,
+                1.7159807682037354,
+                0.44935154914855959,
+                1.0
+            ]
+        },
+        {
+            "name": "SMG_Lv4",
+            "mesh": 0
+        }
+    ],
+    "samplers": [
+        {}
+    ],
+    "scenes": [
+        {
+            "nodes": [
+                0
+            ]
+        }
+    ],
+    "textures": [
+        {
+            "source": 0,
+            "sampler": 0
+        }
+    ],
+    "scene": 0
+}
