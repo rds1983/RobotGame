@@ -335,7 +335,7 @@ namespace RobotGameData
 						{
 							element.Usage = VertexElementUsage.Tangent;
 						}
-						else if (pair.Key == "_BINORMAL")
+						else if (pair.Key == "BINORMAL" || pair.Key == "_BINORMAL")
 						{
 							element.Usage = VertexElementUsage.Binormal;
 						}
@@ -632,10 +632,16 @@ namespace RobotGameData
 				}
 			}
 
+			var bs = BoundingSphere.CreateFromPoints(_allPositions);
+			_allPositions.Clear();
+			_allPositions.Add(Vector3.Zero);
+			_allPositions.Add(Vector3.Zero);
+			_allPositions.Add(Vector3.Zero);
+
 			var tagData = new Dictionary<string, object>
 			{
 				["Vertices"] = _allPositions.ToArray(),
-				["BoundingSphere"] = BoundingSphere.CreateFromPoints(_allPositions)
+				["BoundingSphere"] = bs
 			};
 
 			_model.Tag = tagData;
