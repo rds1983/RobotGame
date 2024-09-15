@@ -80,5 +80,19 @@ namespace RobotGameData
 
 		public static Texture2D LoadTexture2DPremultiply(this AssetManager assetManager, string assetName) =>
 			assetManager.LoadTexture2D(FrameworkCore.GraphicsDevice, assetName, true, Color.Magenta);
+
+		public static Effect LoadEffect2(this AssetManager manager, string assetName)
+		{
+			var folder = Path.GetDirectoryName(assetName);
+			var file = Path.GetFileName(assetName);
+
+#if FNA
+			var path = folder + "/FNA/" + file;
+#else
+			var path = folder + "/MonoGameDX/" + file;
+#endif
+
+			return manager.LoadEffect(FrameworkCore.GraphicsDevice, path);
+		}
 	}
 }

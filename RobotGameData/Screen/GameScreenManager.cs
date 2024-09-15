@@ -327,7 +327,7 @@ namespace RobotGameData.Screen
 			if (alpha > 0)
 			{
 				fadeObject.Visible = true;
-				fadeObject.Color = new Color(0, 0, 0, (byte)alpha);
+				fadeObject.Color = new Color((byte)0, (byte)0, (byte)0, (byte)alpha);
 			}
 			else
 			{

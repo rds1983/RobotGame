@@ -492,6 +492,7 @@ namespace RobotGameData
 
 			//  Apply preparing device setting
 			graphicsDeviceManager.IsFullScreen = false;
+			graphicsDeviceManager.GraphicsProfile = GraphicsProfile.HiDef;
 
 			graphicsDeviceManager.ApplyChanges();
 

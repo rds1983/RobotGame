@@ -304,8 +304,11 @@ namespace RobotGameData.GameObject
 			//renderTracer.Device.RenderState.DestinationBlend = destinationBlend;
 			//renderTracer.Device.RenderState.BlendFunction = blendFunction;
 
+#if FNA
 			renderTracer.Device.ReferenceStencil = referenceAlpha;
+#endif
 			renderTracer.Device.DepthStencilState = DepthStencilState.Default;
+
 			//renderTracer.Device.RenderState.ReferenceAlpha = referenceAlpha;
 			//renderTracer.Device.RenderState.DepthBufferEnable = depthBufferEnable;
 			//renderTracer.Device.RenderState.DepthBufferWriteEnable = 

@@ -183,7 +183,7 @@ namespace RobotGame
 			FrameworkCore.ScreenManager.FadeBackBufferToBlack(TransitionAlpha * 2 / 3);
 
 			// Fade the popup alpha during transitions.
-			spriteObjBox.Color = new Color(255, 255, 255, TransitionAlpha);
+			spriteObjBox.Color = new Color((byte)255, (byte)255, (byte)255, TransitionAlpha);
 
 			Color messageColor = textMessageItem.Color;
 			textMessageItem.Color = new Color(messageColor.R, messageColor.G,

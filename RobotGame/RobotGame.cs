@@ -91,10 +91,6 @@ namespace RobotGame
 			graphicsInfo.screenWidth = (int)ViewerWidth.Width720;
 			graphicsInfo.screenHeight = (int)ViewerHeight.Height720;
 #endif
-			//  Set to shader info
-			//graphicsInfo.pixelShaderProfile = ShaderProfile.PS_2_0;
-			//graphicsInfo.vertexShaderProfile = ShaderProfile.VS_2_0;
-
 			//  Must be call in this constructor
 			ChangeGraphics(graphicsInfo);
 		}

@@ -1,3 +1,5 @@
+#include "Macros.fxh"
+
 //-----------------------------------------------------------------------------
 // BoosterEffect.fx
 //
@@ -80,11 +82,11 @@ technique BoosterEffect
 { 
     pass P0
     { 
-        PixelShader = compile ps_2_0 PS_RadialBlur();         
+        PixelShader = compile PS_PROFILE PS_RadialBlur();         
     } 
     
     pass P1
     { 
-        PixelShader = compile ps_2_0 PS_BoosterWave();         
+        PixelShader = compile PS_PROFILE  PS_BoosterWave();         
     } 
 }

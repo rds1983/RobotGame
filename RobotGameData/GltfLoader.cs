@@ -442,7 +442,7 @@ namespace RobotGameData
 					}
 					else
 					{
-						effect = _assetManager.LoadEffect(FrameworkCore.GraphicsDevice, "/Effects/ShaderModelEffect.efb").Clone();
+						effect = _assetManager.LoadEffect2("/Effects/ShaderModelEffect.efb").Clone();
 					}
 
 					var mesh = XNA.CreateModelMeshPart();
@@ -569,7 +569,7 @@ namespace RobotGameData
 					}
 					else
 					{
-						effect = _assetManager.LoadEffect(FrameworkCore.GraphicsDevice, "/Effects/ShaderModelEffect.efb").Clone();
+						effect = _assetManager.LoadEffect2("/Effects/ShaderModelEffect.efb").Clone();
 
 						effect.Parameters["Shininess"].SetValue(effectData.GetSingle("Shininess"));
 						effect.Parameters["SpecularPower"].SetValue(effectData.GetSingle("SpecularPower"));

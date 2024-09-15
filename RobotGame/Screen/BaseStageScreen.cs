@@ -411,13 +411,13 @@ namespace RobotGame
 			this.fontHud = Assets.FontSystem.GetFont(16);
 
 			//  Load a booster effect
-			boosterEffect = Assets.AssetManager.LoadEffect(GraphicsDevice, "Effects/BoosterEffect.efb");
+			boosterEffect = Assets.AssetManager.LoadEffect2("Effects/BoosterEffect.efb");
 
 			//  Load a glow effect
-			postScreenEffect = Assets.AssetManager.LoadEffect(GraphicsDevice, "Effects/PostScreen.efb");
+			postScreenEffect = Assets.AssetManager.LoadEffect2("Effects/PostScreen.efb");
 
 			// Load a gaussian blur effect
-			gaussianBlurEffect = Assets.AssetManager.LoadEffect(GraphicsDevice, "Effects/GaussianBlur.efb");
+			gaussianBlurEffect = Assets.AssetManager.LoadEffect2("Effects/GaussianBlur.efb");
 
 			FrameworkCore.GameEventManager.Enable = false;
 

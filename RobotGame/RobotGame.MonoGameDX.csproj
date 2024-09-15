@@ -1,0 +1,20 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <AssemblyName>RobotGame</AssemblyName>
+    <RootNamespace>RobotGame</RootNamespace>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <DefineConstants>$(DefineConstants);MONOGAME</DefineConstants>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <OutputPath>bin\MonoGameDX\$(Configuration)</OutputPath>
+    <OutputType>Exe</OutputType>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\RobotGameData\RobotGameData.MonoGameDX.csproj" />
+  </ItemGroup>
+  
+  <ItemGroup>
+    <None Update="Assets\**\*.*">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+</Project>

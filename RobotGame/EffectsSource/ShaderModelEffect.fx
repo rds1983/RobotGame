@@ -1,3 +1,5 @@
+#include "Macros.fxh"
+
 //-----------------------------------------------------------------------------
 // ShaderModelEffect.fx
 //
@@ -156,11 +158,4 @@ float4 ThePixelShader( VS_OUTPUT input ) : COLOR0
                 specular.rgb, diffuseTexture.a);
 }
 
-Technique NormalMapping
-{
-    Pass Go
-    {
-        VertexShader = compile vs_2_0 TheVertexShader();
-        PixelShader = compile ps_2_0 ThePixelShader();
-    }
-}
+TECHNIQUE(NormalMapping, TheVertexShader, ThePixelShader);

@@ -1,3 +1,5 @@
+#include "Macros.fxh"
+
 //-----------------------------------------------------------------------------
 // GaussianBlur.fx
 //
@@ -33,6 +35,6 @@ technique GaussianBlur
 {
     pass Pass0
     {
-        PixelShader = compile ps_2_0 ThePixelShader();
+        PixelShader = compile PS_PROFILE ThePixelShader();
     }
 }

@@ -1,3 +1,5 @@
+#include "Macros.fxh"
+
 //-----------------------------------------------------------------------------
 // PostScreen.fx
 //
@@ -55,11 +57,11 @@ technique PostScreen
 {
     pass P0
     {
-        PixelShader = compile ps_2_0 PS_BloomExtract();    
+        PixelShader = compile PS_PROFILE PS_BloomExtract();    
     }
     
     pass P1
     {
-        PixelShader = compile ps_2_0 PS_BloomCombine();
+        PixelShader = compile PS_PROFILE PS_BloomCombine();
     }
 }
