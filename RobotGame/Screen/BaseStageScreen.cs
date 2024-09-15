@@ -579,6 +579,15 @@ namespace RobotGame
 
 			SpriteBatch spriteBatch = FrameworkCore.RenderContext.SpriteBatch;
 
+#if MONOGAME
+			// For some reason, post screen effects don't work correctly in MG
+			// Hence turn it off
+			spriteBatch.Begin();
+			spriteBatch.Draw(e.Scene, Vector2.Zero, Color.White);
+			spriteBatch.End();
+			return;
+#endif
+
 			Viewport defaultViewport = FrameworkCore.DefaultViewport;
 
 			// Copy back buffer to resolveTexture
