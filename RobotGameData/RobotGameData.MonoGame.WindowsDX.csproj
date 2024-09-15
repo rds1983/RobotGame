@@ -3,7 +3,7 @@
     <AssemblyName>RobotGameData</AssemblyName>
     <RootNamespace>RobotGameData</RootNamespace>
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
-    <DefineConstants>$(DefineConstants);MONOGAME</DefineConstants>
+    <DefineConstants>$(DefineConstants);MONOGAME;MONOGAME_DX</DefineConstants>
     <TargetFramework>net8.0-windows</TargetFramework>
     <OutputPath>bin\MonoGameDX\$(Configuration)</OutputPath>
     <OutputType>Library</OutputType>

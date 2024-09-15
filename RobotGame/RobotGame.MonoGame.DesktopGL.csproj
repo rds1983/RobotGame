@@ -1,0 +1,20 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <AssemblyName>RobotGame</AssemblyName>
+    <RootNamespace>RobotGame</RootNamespace>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <DefineConstants>$(DefineConstants);MONOGAME;MONOGAME_GL</DefineConstants>
+    <TargetFramework>net8.0</TargetFramework>
+    <OutputPath>bin\MonoGameGL\$(Configuration)</OutputPath>
+    <OutputType>Exe</OutputType>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\RobotGameData\RobotGameData.MonoGame.DesktopGL.csproj" />
+  </ItemGroup>
+  
+  <ItemGroup>
+    <None Update="Assets\**\*.*">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+</Project>

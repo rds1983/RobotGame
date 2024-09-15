@@ -571,9 +571,6 @@ namespace RobotGameData
 					{
 						effect = _assetManager.LoadEffect2("/Effects/ShaderModelEffect.efb").Clone();
 
-						effect.Parameters["Shininess"].SetValue(effectData.GetSingle("Shininess"));
-						effect.Parameters["SpecularPower"].SetValue(effectData.GetSingle("SpecularPower"));
-
 						SetTexture(effectData, effect, "NormalMap");
 						SetTexture(effectData, effect, "SpecularMap");
 						SetTexture(effectData, effect, "Texture");

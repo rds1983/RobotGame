@@ -17,15 +17,6 @@ float4 LightColor;
 float4 AmbientLightColor;
 // ****************************
 
-// ***** material properties *****
-// output from phong specular will be scaled by this amount
-float Shininess;
-
-// specular exponent from phong lighting model.  controls the "tightness" of
-// specular highlights.
-float SpecularPower;
-// *******************************
-
 //    NormalMap texture sampler
 texture2D NormalMap;
 sampler2D NormalMapSampler = sampler_state

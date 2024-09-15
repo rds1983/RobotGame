@@ -88,8 +88,10 @@ namespace RobotGameData
 
 #if FNA
 			var path = folder + "/FNA/" + file;
-#else
+#elif MONOGAME_DX
 			var path = folder + "/MonoGameDX/" + file;
+#else
+			var path = folder + "/MonoGameGL/" + file;
 #endif
 
 			return manager.LoadEffect(FrameworkCore.GraphicsDevice, path);

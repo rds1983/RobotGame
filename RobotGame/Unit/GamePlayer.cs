@@ -705,10 +705,6 @@ namespace RobotGame
 			e.Effect.Parameters["AmbientLightColor"].SetValue(
 											lighting.ambientColor.ToVector4());
 
-			e.Effect.Parameters["Shininess"].SetValue(1.0f);
-
-			e.Effect.Parameters["SpecularPower"].SetValue(12.0f);
-
 			e.Effect.Parameters["EnvironmentMap"].SetValue(
 				RobotGameGame.CurrentGameLevel.GameWorld.TextureCubeMap);
 
