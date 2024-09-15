@@ -3,6 +3,10 @@ Port of XNA RobotGame Sample to MonoGame/FNA
 ![image](https://github.com/user-attachments/assets/312c7399-f7e3-478c-967d-db9f30f2841f)
 The port doesn't use Content Pipeline, but loads all assets in raw form using [XNAssets](https://github.com/rds1983/XNAssets). All game 3d models are loaded from glb.
 
+## Building From Source Code for MonoGame
+Open either RobotGame.MonoGame.WindowsDX.sln or RobotGame.MonoGame.DesktopGL.sln in the IDE and run.
+Post screen effects don't work correctly in MG, hence they were turned off.
+
 ## Building From Source Code for FNA
 
 Clone following repos in one folder:
