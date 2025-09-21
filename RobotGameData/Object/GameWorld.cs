@@ -9,6 +9,7 @@
 
 #region Using Statements
 using AssetManagementBase;
+using DigitalRiseModel;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using RobotGameData.Render;
@@ -43,7 +44,7 @@ namespace RobotGameData.GameObject
 		/// Constructor.
 		/// </summary>
 		/// <param name="resource">model resource</param>
-		public GameWorld(Model resource)
+		public GameWorld(DrModel resource)
 			: base(resource) { }
 
 		/// <summary>

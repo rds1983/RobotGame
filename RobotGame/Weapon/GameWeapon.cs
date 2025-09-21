@@ -175,9 +175,9 @@ namespace RobotGame
 					modelWeapon[i] = new GameModel(spec.ModelFilePath);
 					modelWeapon[i].Name = spec.ModelFilePath;
 
-					for (int j = 0; j < modelWeapon[i].ModelData.model.Bones.Count; j++)
+					for (int j = 0; j < modelWeapon[i].ModelData.model.Bones.Length; j++)
 					{
-						ModelBone bone = modelWeapon[i].ModelData.model.Bones[j];
+						var bone = modelWeapon[i].ModelData.model.Bones[j];
 
 						//  Gun muzzule bone
 						if (bone.Name == spec.MuzzleBone)

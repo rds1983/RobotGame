@@ -35,7 +35,7 @@ namespace RobotGameData
 			{
 				foreach (var file in fontSystemLoadingSettings.AdditionalFonts)
 				{
-					data = manager.LoadByteArray(file, false);
+					data = manager.ReadAsByteArray(file);
 					fontSystem.AddFont(data);
 				}
 			}
@@ -51,7 +51,7 @@ namespace RobotGameData
 			return StaticSpriteFont.FromBMFont(fontData,
 						name =>
 						{
-							var imageData = manager.LoadByteArray(name, false);
+							var imageData = manager.ReadAsByteArray(name);
 							return new MemoryStream(imageData);
 						},
 						graphicsDevice);

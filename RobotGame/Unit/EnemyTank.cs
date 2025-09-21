@@ -9,6 +9,7 @@
 
 #region Using Statements
 using System;
+using DigitalRiseModel;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using RobotGameData.AI;
@@ -83,15 +84,15 @@ namespace RobotGame
 		{
 			base.Initialize();
 
-			for (int i = 0; i < ModelData.model.Bones.Count; i++)
+			for (int i = 0; i < ModelData.model.Bones.Length; i++)
 			{
-				ModelBone bone = ModelData.model.Bones[i];
+				var bone = ModelData.model.Bones[i];
 
 				if (bone.Name == "GunDummy")
 					indexFireWeaponBone = bone.Index;
 			}
 
-			indexTurretBone = ModelData.model.Bones["Top"].Index;
+			indexTurretBone = ModelData.model.FindBoneByName("Top").Index;
 			transformTurret = ModelData.boneTransforms[indexTurretBone];
 
 			PlayAction(Action.Idle);
@@ -108,7 +109,7 @@ namespace RobotGame
 			// Reset the turret's transform
 			turretAngleSpeed = 0.0f;
 			transformTurret = ModelData.boneTransforms[indexTurretBone];
-			ModelData.model.Bones["Top"].Transform = transformTurret;
+			ModelData.model.FindBoneByName("Top").DefaultPose = new SrtTransform(transformTurret);
 
 			//  Reset the material
 			Material.alpha = 1.0f;
@@ -151,7 +152,7 @@ namespace RobotGame
 					MathHelper.ToRadians(rotationbyFrame));
 			}
 
-			ModelData.model.Bones[indexTurretBone].Transform = transformTurret;
+			ModelData.model.Bones[indexTurretBone].DefaultPose = new SrtTransform(transformTurret);
 			ModelData.model.CopyAbsoluteBoneTransformsTo(BoneTransforms);
 		}
 

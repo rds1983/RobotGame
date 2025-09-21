@@ -13,6 +13,8 @@ using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using RobotGameData.Render;
 using RobotGameData.Collision;
+using DigitalRiseModel;
+using RobotGameData.Utility;
 #endregion
 
 
@@ -24,13 +26,13 @@ namespace RobotGameData.GameObject
 	/// </summary>
 	public class ModelData
 	{
-		public Model model = null;
+		public DrModel model = null;
 		public Matrix[] boneTransforms = null;
 
-		public ModelData(Model m)
+		public ModelData(DrModel m)
 		{
-			model = m;
-			boneTransforms = new Matrix[m.Bones.Count];
+			model = m ?? throw new ArgumentNullException(nameof(m));
+			boneTransforms = new Matrix[m.Bones.Length];
 			m.CopyBoneTransformsTo(boneTransforms);
 		}
 	}
@@ -46,7 +48,7 @@ namespace RobotGameData.GameObject
 		Vector3 veclocity = Vector3.Zero;
 		Matrix rotateMatrix = Matrix.Identity;
 		Matrix[] boneTransforms = null;
-		ModelBone rootBone = null;
+		DrModelBone rootBone = null;
 
 		RenderLighting[] lighting = null;
 		RenderMaterial material = null;
@@ -82,8 +84,8 @@ namespace RobotGameData.GameObject
 				get { return renderTracer; }
 			}
 
-			private ModelMesh mesh;
-			public ModelMesh Mesh
+			private DrMesh mesh;
+			public DrMesh Mesh
 			{
 				get { return mesh; }
 			}
@@ -101,7 +103,7 @@ namespace RobotGameData.GameObject
 			}
 
 			public RenderingCustomEffectEventArgs(RenderTracer renderTracer,
-				ModelMesh mesh, Effect effect, Matrix world)
+				DrMesh mesh, Effect effect, Matrix world)
 				: base()
 			{
 				this.renderTracer = renderTracer;
@@ -129,7 +131,7 @@ namespace RobotGameData.GameObject
 			protected set { boneTransforms = value; }
 		}
 
-		public ModelBone RootBone
+		public DrModelBone RootBone
 		{
 			get { return rootBone; }
 			protected set { rootBone = value; }
@@ -249,7 +251,7 @@ namespace RobotGameData.GameObject
 		/// Constructor.
 		/// </summary>
 		/// <param name="resource">model resource</param>
-		public GameModel(Model resource)
+		public GameModel(DrModel resource)
 			: base()
 		{
 			if (resource == null)
@@ -286,12 +288,13 @@ namespace RobotGameData.GameObject
 			{
 				//  If this is root bone, 
 				//  the world transformed matrix weight with only root bone
-				this.ModelData.model.Root.Transform *= this.TransformedMatrix;
+				var transform = ModelData.model.Root.CalculateDefaultLocalTransform();
+				this.ModelData.model.Root.SetTransform(transform * TransformedMatrix);
 			}
 			//  If no animated bones (static bones)
 			else
 			{   // Set the world matrix as the root transform of the model.
-				this.ModelData.model.Root.Transform = this.TransformedMatrix;
+				this.ModelData.model.Root.SetTransform(TransformedMatrix);
 			}
 
 			// Look up combined bone matrices for the entire the model.
@@ -334,23 +337,25 @@ namespace RobotGameData.GameObject
 			//renderState.CullMode = cullMode;
 
 			// Draw the model.
-			for (int i = 0; i < ModelData.model.Meshes.Count; i++)
+			for (int i = 0; i < ModelData.model.MeshBones.Length; i++)
 			{
-				ModelMesh mesh = ModelData.model.Meshes[i];
+				var bone = ModelData.model.MeshBones[i];
+				var mesh = bone.Mesh;
 
-				for (int j = 0; j < mesh.Effects.Count; j++)
+				for (int j = 0; j < mesh.GetEffects().Length; j++)
 				{
+					var meshEffect = mesh.GetEffects()[j];
 					//  call a entried custom effect processing
 					if (RenderingCustomEffect != null)
 					{
 						//  Shader custom processing
 						RenderingCustomEffect(this,
 							new RenderingCustomEffectEventArgs(renderTracer, mesh,
-							mesh.Effects[j], BoneTransforms[mesh.ParentBone.Index]));
+							meshEffect, BoneTransforms[bone.Index]));
 					}
-					else if (mesh.Effects[j] is BasicEffect)
+					else if (meshEffect is BasicEffect)
 					{
-						BasicEffect effect = (BasicEffect)mesh.Effects[j];
+						BasicEffect effect = (BasicEffect)meshEffect;
 
 						//  Apply fog
 						if (renderTracer.Fog != null && ActiveFog)
@@ -470,12 +475,12 @@ namespace RobotGameData.GameObject
 						}
 
 						//  Apply transform
-						effect.World = BoneTransforms[mesh.ParentBone.Index];
+						effect.World = BoneTransforms[bone.Index];
 						effect.View = renderTracer.View;
 						effect.Projection = renderTracer.Projection;
 					}
 
-					foreach (var pass in mesh.Effects[j].CurrentTechnique.Passes)
+					foreach (var pass in meshEffect.CurrentTechnique.Passes)
 					{
 						pass.Apply();
 
@@ -483,7 +488,7 @@ namespace RobotGameData.GameObject
 						{
 							mesh.Draw();
 						}
-						catch(Exception)
+						catch (Exception)
 						{
 						}
 					}
@@ -499,7 +504,7 @@ namespace RobotGameData.GameObject
 			this.ModelData.model.CopyBoneTransformsFrom(this.ModelData.boneTransforms);
 
 			// Set the world matrix as the root transform of the model.
-			ModelData.model.Root.Transform = Matrix.Identity;
+			ModelData.model.Root.DefaultPose = SrtTransform.Identity;
 
 			// Look up combined bone matrices for the entire the model.
 			ModelData.model.CopyAbsoluteBoneTransformsTo(this.boneTransforms);
@@ -514,7 +519,7 @@ namespace RobotGameData.GameObject
 			BindModel(model);
 		}
 
-		private void BindModel(Model model) => BindModel(new ModelData(model));
+		private void BindModel(DrModel model) => BindModel(new ModelData(model));
 
 		public virtual void BindModel(ModelData modelData)
 		{
@@ -522,18 +527,18 @@ namespace RobotGameData.GameObject
 			this.rootBone = modelData.model.Root;
 
 			//  Set to bone transform matrix
-			this.boneTransforms = new Matrix[this.ModelData.model.Bones.Count];
+			this.boneTransforms = new Matrix[this.ModelData.model.Bones.Length];
 			this.ModelData.model.CopyAbsoluteBoneTransformsTo(this.boneTransforms);
 
 			// Compute the bounding sphere of the ModelData.
 			cullingSphere = new BoundingSphere();
 
-			for (int i = 0; i < this.ModelData.model.Meshes.Count; i++)
+			for (int i = 0; i < this.ModelData.model.MeshBones.Length; i++)
 			{
-				ModelMesh mesh = this.ModelData.model.Meshes[i];
+				var bone = ModelData.model.MeshBones[i];
+				var mesh = bone.Mesh;
 
-				cullingSphere = BoundingSphere.CreateMerged(cullingSphere,
-															mesh.BoundingSphere);
+				cullingSphere = BoundingSphere.CreateMerged(cullingSphere, mesh.BoundingBox.ToSphere());				
 			}
 
 			cullingSphereLocalCenter = cullingSphere.Center;

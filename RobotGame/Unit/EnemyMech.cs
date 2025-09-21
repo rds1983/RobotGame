@@ -116,9 +116,9 @@ namespace RobotGame
 			PlayAction(Action.Idle);
 
 			//  Find the weapon fire bone
-			for (int i = 0; i < ModelData.model.Bones.Count; i++)
+			for (int i = 0; i < ModelData.model.Bones.Length; i++)
 			{
-				ModelBone bone = ModelData.model.Bones[i];
+				var bone = ModelData.model.Bones[i];
 
 				switch (this.UnitType)
 				{

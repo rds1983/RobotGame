@@ -10,6 +10,7 @@
 #region Using Statements
 using System;
 using System.Collections.Generic;
+using DigitalRiseModel;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using RobotGameData.Render;
@@ -47,7 +48,7 @@ namespace RobotGameData.GameObject
 		/// Constructor.
 		/// </summary>
 		/// <param name="resource">model resource</param>         
-		public GameAnimateModel(Model resource)
+		public GameAnimateModel(DrModel resource)
 			: base(resource) { }
 
 		/// <summary>
@@ -78,9 +79,9 @@ namespace RobotGameData.GameObject
 
 			if (animationList.Count > 0)
 			{
-				for (int i = 0; i < this.ModelData.model.Bones.Count; i++)
+				for (int i = 0; i < this.ModelData.model.Bones.Length; i++)
 				{
-					ModelBone bone = this.ModelData.model.Bones[i];
+					var bone = this.ModelData.model.Bones[i];
 
 					AnimationBlender Blender = animationBlenderList[i];
 
@@ -91,9 +92,7 @@ namespace RobotGameData.GameObject
 						if (Blender.AnimationBinder != null)
 						{
 							//  gets calculated animation key frame on this time
-							bone.Transform =
-									Blender.GetKeyFrameMatrix(
-									(float)gameTime.ElapsedGameTime.TotalSeconds);
+							bone.DefaultPose = new SrtTransform(Blender.GetKeyFrameMatrix((float)gameTime.ElapsedGameTime.TotalSeconds));
 						}
 					}
 				}
@@ -123,7 +122,7 @@ namespace RobotGameData.GameObject
 			if (animationBlenderList.Count == 0)
 			{
 				//  Insert all bones in the AnimationBinder
-				for (int i = 0; i < modelData.model.Bones.Count; i++)
+				for (int i = 0; i < modelData.model.Bones.Length; i++)
 				{
 					AnimationBlender animationBlender = new AnimationBlender();
 					animationBlender.Name = modelData.model.Bones[i].Name;

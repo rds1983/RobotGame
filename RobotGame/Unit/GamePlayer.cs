@@ -20,6 +20,7 @@ using RobotGameData.GameObject;
 using RobotGameData.Camera;
 using RobotGameData.Helper;
 using RobotGameData.Render;
+using DigitalRiseModel;
 #endregion
 
 namespace RobotGame
@@ -196,7 +197,7 @@ namespace RobotGame
 
 		GameWeapon possiblePickupWeapon = null;
 
-		ModelBone boneWaist = null;
+		DrModelBone boneWaist = null;
 		Matrix matrixWaistBoneSource = Matrix.Identity;
 		Vector3 moveDirection = Vector3.Zero;
 
@@ -386,9 +387,9 @@ namespace RobotGame
 			CreateWeapon(this.specData.DefaultWeaponFilePath);
 
 			//  Find index of dummy bones
-			for (int i = 0; i < ModelData.model.Bones.Count; i++)
+			for (int i = 0; i < ModelData.model.Bones.Length; i++)
 			{
-				ModelBone bone = ModelData.model.Bones[i];
+				var bone = ModelData.model.Bones[i];
 
 				if (bone.Name == "HeroPointDummyLeft")
 					this.indexLeftHandWeaponDummy = bone.Index;
@@ -423,7 +424,7 @@ namespace RobotGame
 		{
 			base.Initialize();
 
-			this.boneWaist = ModelData.model.Bones["Spine"];
+			this.boneWaist = ModelData.model.FindBoneByName("Spine");
 
 			//  Gets a waist's matrix
 			this.matrixWaistBoneSource =
@@ -580,7 +581,7 @@ namespace RobotGame
 				this.CurrentLowerAction == LowerAction.RightDead)
 			{
 				SetRootAxis(Matrix.CreateRotationX(MathHelper.ToRadians(-90.0f)));
-				this.boneWaist.Transform = this.matrixWaistBoneSource;
+				this.boneWaist.DefaultPose = new SrtTransform(this.matrixWaistBoneSource);
 
 				this.rootRotationAngle = 0.0f;
 				this.rootElapsedAngle = 0.0f;
@@ -595,9 +596,10 @@ namespace RobotGame
 								Matrix.CreateRotationY(
 								MathHelper.ToRadians(this.rootElapsedAngle)));
 
-					this.boneWaist.Transform *=
-						Matrix.CreateFromAxisAngle(boneWaist.Transform.Right,
-						MathHelper.ToRadians(currentWaistAngle));
+					var transform = boneWaist.DefaultPose.ToMatrix();
+					this.boneWaist.DefaultPose = new SrtTransform(transform *
+						Matrix.CreateFromAxisAngle(boneWaist.DefaultPose.ToMatrix().Right,
+						MathHelper.ToRadians(currentWaistAngle)));
 
 					ModelData.model.CopyAbsoluteBoneTransformsTo(BoneTransforms);
 				}

@@ -9,6 +9,7 @@
 
 #region Using Statements
 using System;
+using AssetManagementBase;
 using RobotGameData;
 using RobotGameData.Render;
 #endregion
@@ -132,6 +133,7 @@ namespace RobotGame
 		/// </summary>
 		static void Main()
 		{
+			AMBConfiguration.Logger = Console.WriteLine;
 			using (RobotGameGame game = new RobotGameGame())
 			{
 				game.Run();
