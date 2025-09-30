@@ -9,7 +9,7 @@
 
 #region Using Statements
 using System;
-using DigitalRiseModel;
+using NursiaModel;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using RobotGameData.AI;

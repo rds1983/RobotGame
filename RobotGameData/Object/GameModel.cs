@@ -13,7 +13,7 @@ using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using RobotGameData.Render;
 using RobotGameData.Collision;
-using DigitalRiseModel;
+using NursiaModel;
 using RobotGameData.Utility;
 #endregion
 
@@ -26,10 +26,10 @@ namespace RobotGameData.GameObject
 	/// </summary>
 	public class ModelData
 	{
-		public DrModel model = null;
+		public NrmModel model = null;
 		public Matrix[] boneTransforms = null;
 
-		public ModelData(DrModel m)
+		public ModelData(NrmModel m)
 		{
 			model = m ?? throw new ArgumentNullException(nameof(m));
 			boneTransforms = new Matrix[m.Bones.Length];
@@ -48,7 +48,7 @@ namespace RobotGameData.GameObject
 		Vector3 veclocity = Vector3.Zero;
 		Matrix rotateMatrix = Matrix.Identity;
 		Matrix[] boneTransforms = null;
-		DrModelBone rootBone = null;
+		NrmModelBone rootBone = null;
 
 		RenderLighting[] lighting = null;
 		RenderMaterial material = null;
@@ -84,8 +84,8 @@ namespace RobotGameData.GameObject
 				get { return renderTracer; }
 			}
 
-			private DrMesh mesh;
-			public DrMesh Mesh
+			private NrmMesh mesh;
+			public NrmMesh Mesh
 			{
 				get { return mesh; }
 			}
@@ -103,7 +103,7 @@ namespace RobotGameData.GameObject
 			}
 
 			public RenderingCustomEffectEventArgs(RenderTracer renderTracer,
-				DrMesh mesh, Effect effect, Matrix world)
+				NrmMesh mesh, Effect effect, Matrix world)
 				: base()
 			{
 				this.renderTracer = renderTracer;
@@ -131,7 +131,7 @@ namespace RobotGameData.GameObject
 			protected set { boneTransforms = value; }
 		}
 
-		public DrModelBone RootBone
+		public NrmModelBone RootBone
 		{
 			get { return rootBone; }
 			protected set { rootBone = value; }
@@ -251,7 +251,7 @@ namespace RobotGameData.GameObject
 		/// Constructor.
 		/// </summary>
 		/// <param name="resource">model resource</param>
-		public GameModel(DrModel resource)
+		public GameModel(NrmModel resource)
 			: base()
 		{
 			if (resource == null)
@@ -337,10 +337,10 @@ namespace RobotGameData.GameObject
 			//renderState.CullMode = cullMode;
 
 			// Draw the model.
-			for (int i = 0; i < ModelData.model.MeshBones.Length; i++)
+			for (int i = 0; i < ModelData.model.Meshes.Length; i++)
 			{
-				var bone = ModelData.model.MeshBones[i];
-				var mesh = bone.Mesh;
+				var mesh = ModelData.model.Meshes[i];
+				var bone = mesh.ParentBone;
 
 				for (int j = 0; j < mesh.GetEffects().Length; j++)
 				{
@@ -519,7 +519,7 @@ namespace RobotGameData.GameObject
 			BindModel(model);
 		}
 
-		private void BindModel(DrModel model) => BindModel(new ModelData(model));
+		private void BindModel(NrmModel model) => BindModel(new ModelData(model));
 
 		public virtual void BindModel(ModelData modelData)
 		{
@@ -533,10 +533,9 @@ namespace RobotGameData.GameObject
 			// Compute the bounding sphere of the ModelData.
 			cullingSphere = new BoundingSphere();
 
-			for (int i = 0; i < this.ModelData.model.MeshBones.Length; i++)
+			for (int i = 0; i < ModelData.model.Meshes.Length; i++)
 			{
-				var bone = ModelData.model.MeshBones[i];
-				var mesh = bone.Mesh;
+				var mesh = ModelData.model.Meshes[i];
 
 				cullingSphere = BoundingSphere.CreateMerged(cullingSphere, mesh.BoundingBox.ToSphere());				
 			}

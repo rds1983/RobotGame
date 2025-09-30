@@ -1,5 +1,5 @@
 ﻿using AssetManagementBase;
-using DigitalRiseModel;
+using NursiaModel;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using RobotGameData.GameObject;
@@ -87,7 +87,7 @@ namespace RobotGameData
 			// Set material
 			foreach (var pair in materials)
 			{
-				var mesh = (from m in model.MeshBones where m.Mesh != null && m.Name == pair.Key select m.Mesh).FirstOrDefault();
+				var mesh = (from m in model.Meshes where m.Name == pair.Key select m).FirstOrDefault();
 				if (mesh == null)
 				{
 					continue;

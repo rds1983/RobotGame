@@ -20,7 +20,7 @@ using RobotGameData.GameObject;
 using RobotGameData.Camera;
 using RobotGameData.Helper;
 using RobotGameData.Render;
-using DigitalRiseModel;
+using NursiaModel;
 #endregion
 
 namespace RobotGame
@@ -197,7 +197,7 @@ namespace RobotGame
 
 		GameWeapon possiblePickupWeapon = null;
 
-		DrModelBone boneWaist = null;
+		NrmModelBone boneWaist = null;
 		Matrix matrixWaistBoneSource = Matrix.Identity;
 		Vector3 moveDirection = Vector3.Zero;
 
