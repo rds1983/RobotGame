@@ -8,7 +8,7 @@
 #endregion
 
 #region Using Statements
-using NursiaModel;
+using DigitalRiseModel;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using RobotGameData.Render;
@@ -42,7 +42,7 @@ namespace RobotGameData.GameObject
 		/// Constructor.
 		/// </summary>
 		/// <param name="resource">model resource</param>
-		public GameSkybox(NrmModel resource)
+		public GameSkybox(DrModel resource)
 			: base(resource) { }
 
 		/// <summary>

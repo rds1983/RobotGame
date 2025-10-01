@@ -1,5 +1,5 @@
 ﻿using AssetManagementBase;
-using NursiaModel;
+using DigitalRiseModel;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using RobotGameData.GameObject;

@@ -1,4 +1,4 @@
-﻿using NursiaModel;
+﻿using DigitalRiseModel;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using System;
@@ -8,16 +8,16 @@ namespace RobotGameData.Utility
 {
 	internal static class ModelUtils
 	{
-		public static Effect GetEffect(this NrmMeshPart submesh) => (Effect)submesh.Tag;
+		public static Effect GetEffect(this DrMeshPart submesh) => (Effect)submesh.Tag;
 
-		public static void SetEffect(this NrmMeshPart submesh, Effect effect) => submesh.Tag = effect;
+		public static void SetEffect(this DrMeshPart submesh, Effect effect) => submesh.Tag = effect;
 
-		public static void SetTransform(this NrmModelBone bone, Matrix transform)
+		public static void SetTransform(this DrModelBone bone, Matrix transform)
 		{
 			bone.DefaultPose = new SrtTransform(transform);
 		}
 
-		public static Effect[] GetEffects(this NrmMesh mesh)
+		public static Effect[] GetEffects(this DrMesh mesh)
 		{
 			if (mesh.Tag != null)
 			{
@@ -44,7 +44,7 @@ namespace RobotGameData.Utility
 			return (Effect[])mesh.Tag;
 		}
 
-		public static void Draw(this NrmMesh mesh)
+		public static void Draw(this DrMesh mesh)
 		{
 			var graphicsDevice = FrameworkCore.GraphicsDevice;
 

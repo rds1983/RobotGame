@@ -10,7 +10,7 @@
 #region Using Statements
 using System;
 using System.Collections.Generic;
-using NursiaModel;
+using DigitalRiseModel;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using RobotGameData.Render;
@@ -48,7 +48,7 @@ namespace RobotGameData.GameObject
 		/// Constructor.
 		/// </summary>
 		/// <param name="resource">model resource</param>         
-		public GameAnimateModel(NrmModel resource)
+		public GameAnimateModel(DrModel resource)
 			: base(resource) { }
 
 		/// <summary>

@@ -17,7 +17,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XNAssets.FNA.Core", "..\XNA
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XNAssets.FontStashSharp.FNA.Core", "..\XNAssets\src\XNAssets.FontStashSharp\XNAssets.FontStashSharp.FNA.Core.csproj", "{6C90CE78-ED1F-AA5B-A8DB-7958E76C8DCF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NursiaModel.FNA.Core", "..\NursiaModel\Source\NursiaModel.FNA.Core.csproj", "{8511EDB0-5B98-D8F4-6F4E-7DCD96A50732}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DigitalRiseModel.FNA.Core", "..\DigitalRiseModel\Source\DigitalRiseModel.FNA.Core.csproj", "{8511EDB0-5B98-D8F4-6F4E-7DCD96A50732}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

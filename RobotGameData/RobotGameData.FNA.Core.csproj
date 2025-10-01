@@ -14,7 +14,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\NursiaModel\Source\NursiaModel.FNA.Core.csproj" />
+    <ProjectReference Include="..\..\DigitalRiseModel\Source\DigitalRiseModel.FNA.Core.csproj" />
     <ProjectReference Include="..\..\XNAssets\src\XNAssets.FontStashSharp\XNAssets.FontStashSharp.FNA.Core.csproj" />
   </ItemGroup>
 </Project>

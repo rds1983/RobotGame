@@ -13,7 +13,7 @@ using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using RobotGameData.Render;
 using RobotGameData.Collision;
-using NursiaModel;
+using DigitalRiseModel;
 using RobotGameData.Utility;
 #endregion
 
@@ -26,10 +26,10 @@ namespace RobotGameData.GameObject
 	/// </summary>
 	public class ModelData
 	{
-		public NrmModel model = null;
+		public DrModel model = null;
 		public Matrix[] boneTransforms = null;
 
-		public ModelData(NrmModel m)
+		public ModelData(DrModel m)
 		{
 			model = m ?? throw new ArgumentNullException(nameof(m));
 			boneTransforms = new Matrix[m.Bones.Length];
@@ -48,7 +48,7 @@ namespace RobotGameData.GameObject
 		Vector3 veclocity = Vector3.Zero;
 		Matrix rotateMatrix = Matrix.Identity;
 		Matrix[] boneTransforms = null;
-		NrmModelBone rootBone = null;
+		DrModelBone rootBone = null;
 
 		RenderLighting[] lighting = null;
 		RenderMaterial material = null;
@@ -84,8 +84,8 @@ namespace RobotGameData.GameObject
 				get { return renderTracer; }
 			}
 
-			private NrmMesh mesh;
-			public NrmMesh Mesh
+			private DrMesh mesh;
+			public DrMesh Mesh
 			{
 				get { return mesh; }
 			}
@@ -103,7 +103,7 @@ namespace RobotGameData.GameObject
 			}
 
 			public RenderingCustomEffectEventArgs(RenderTracer renderTracer,
-				NrmMesh mesh, Effect effect, Matrix world)
+				DrMesh mesh, Effect effect, Matrix world)
 				: base()
 			{
 				this.renderTracer = renderTracer;
@@ -131,7 +131,7 @@ namespace RobotGameData.GameObject
 			protected set { boneTransforms = value; }
 		}
 
-		public NrmModelBone RootBone
+		public DrModelBone RootBone
 		{
 			get { return rootBone; }
 			protected set { rootBone = value; }
@@ -251,7 +251,7 @@ namespace RobotGameData.GameObject
 		/// Constructor.
 		/// </summary>
 		/// <param name="resource">model resource</param>
-		public GameModel(NrmModel resource)
+		public GameModel(DrModel resource)
 			: base()
 		{
 			if (resource == null)
@@ -519,7 +519,7 @@ namespace RobotGameData.GameObject
 			BindModel(model);
 		}
 
-		private void BindModel(NrmModel model) => BindModel(new ModelData(model));
+		private void BindModel(DrModel model) => BindModel(new ModelData(model));
 
 		public virtual void BindModel(ModelData modelData)
 		{
